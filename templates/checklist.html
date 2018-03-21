@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BDSM Checklist</title>
+<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="global.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>var num_rows = {{ num_rows }};</script>
+<script src="logic.js"></script>
+</head>
+
+<body>
+  <h1 id="title">BDSM Checklist</h1>
+
+  <table id="checklist_table">
+    <thead id="checklist_head">
+      <tr>
+	<th class="dom">Dom</th>
+	<th class="sub">Sub</th>
+      </tr>
+    </thead>
+{{ checklist rows }}
+  </table>
+  <button id="submit">Submit</button>
+</body>
+</html>

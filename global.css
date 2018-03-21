@@ -1,0 +1,51 @@
+body {
+    background-color: #666666;
+    font-family: Helvetica;
+}
+
+#title {
+    font-family: 'Bowlby One SC', Impact, sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+#checklist_table {
+    width: 60em;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+table {
+    border: 0;
+    border-spacing: 0;
+}
+
+#checklist_head {
+    font-family: 'Bowlby One SC', Impact, sans-serif;
+    font-weight: bold;
+    font-size: 1.75em;
+}
+
+.topic td {
+    background-color: #333333;
+    color: #cccccc;
+    font-family: 'Bowlby One SC', Impact, sans-serif;
+    font-size: 1.25em;
+    padding: 0.1em 0.1em 0.1em 0.5em;
+}
+
+.activity td {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 0.4em;
+}
+
+tbody:nth-child(even) {
+    background-color: #cccccc;
+}
+
+tbody:nth-child(odd) {
+    background-color: #eeeeee;
+}
