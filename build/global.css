@@ -1,0 +1,173 @@
+body {
+    /*background-color: #666666;*/
+    background-color: #222222;
+    font-family: Helvetica;
+}
+
+#title {
+    font-family: 'Bowlby One SC', Impact, sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #a20e0e;
+}
+
+#checklist_table {
+    width: 60em;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+table {
+    border: 0;
+    border-spacing: 0;
+}
+
+#checklist_head {
+    font-family: 'Bowlby One SC', Impact, sans-serif;
+    font-weight: bold;
+    font-size: 1.75em;
+    color: #a20e0e;
+}
+
+.topic td {
+    /* background-color: #333333; */
+    background-color: #5a5a5a;
+    /* color: #cccccc; */
+    color: #d6d6d6;
+    font-family: 'Bowlby One SC', Impact, sans-serif;
+    font-size: 1.25em;
+    padding: 0.1em 0.1em 0.1em 0.5em;
+}
+
+.activity td {
+    /* font-family: 'Libre Franklin', sans-serif; */
+    /* font-weight: 600; */
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 0.4em;
+}
+
+tbody:nth-child(even) {
+    /* background-color: #cccccc; */
+    background-color: #e4e2e2;
+}
+
+tbody:nth-child(odd) {
+    /* background-color: #eeeeee; */
+    background-color: #fdfdfd;
+}
+
+.dom_cell {
+    /* border-right: solid 1px #bbbbbb; */
+    border-right: solid 1px #d0d0d0;
+}
+
+
+.radio_slider {
+    position: relative;
+    /* background: rgba(255,255,255,.2);  background*/
+    /* margin: 4px auto; */
+    /* overflow: hidden; */
+    /* padding: 0 !important; */
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+    height: 1.25em;
+    width: 30em;
+}
+
+.radio_slider input {
+    display: none;
+}
+
+.radio_slider > * {
+  float: left;
+}
+
+.radio_slider label {
+    /* font: 90%/1.618 "Source Sans Pro"; */
+    /* color: rgba(255,255,255,.9); */
+    /* z-index: 0; */
+    display: block;
+    width: 7em;
+    /* height: 20px; */
+    margin: 0 0.25em;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    /* cursor: pointer; */
+    /* z-index: 1; */
+    /*background: rgba(0,0,0,.1);*/
+    text-align: center;
+    /*margin: 0 2px;*/
+    /* background: blue; /\* make it blue *\/ */
+}
+
+.radio_slider label p {
+    vertical-align: middle;
+}
+
+.radio_slider input:checked+label {
+    background: rgba(0, 0, 0, 0.2);
+    /* background-color: #b5b5b5; */
+}
+
+.experience {
+    margin: 0.2em;
+}
+
+.interest {
+    /* height: 2.5em; */
+    margin: 0.2em;
+}
+
+.experience label {
+    width: 7em;
+}
+
+.interest label {
+    width: 4.5em;
+    /* height: 2.5em; */
+}
+
+.radio_slider input:checked+label.interest1 {
+    background-color: #cc0000;
+}
+
+.radio_slider input:checked+label.interest2 {
+    background-color: #cc8f00;
+}
+
+.radio_slider input:checked+label.interest3 {
+    background-color: #cccc00;
+}
+
+.radio_slider input:checked+label.interest4 {
+    background-color: #aacc00;
+}
+
+.radio_slider input:checked+label.interest5 {
+    background-color: #5ca329;
+}
+
+.radio_slider input:checked+label.interest6 {
+    background-color: #00cc00;
+}
+
+.radio_slider input:checked+label.experience1 {
+    background-color: #b5b5b5;
+}
+
+.radio_slider input:checked+label.experience2 {
+    background-color: #9fa6cb;
+}
+
+.radio_slider input:checked+label.experience3 {
+    background-color: #8997e1;
+}
+
+.radio_slider input:checked+label.experience4 {
+    background-color: #7289f8;
+}
