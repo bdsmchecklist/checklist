@@ -1,5 +1,4 @@
 body {
-    /*background-color: #666666;*/
     background-color: #222222;
     font-family: Helvetica;
 }
@@ -30,9 +29,7 @@ table {
 }
 
 .topic td {
-    /* background-color: #333333; */
     background-color: #5a5a5a;
-    /* color: #cccccc; */
     color: #d6d6d6;
     font-family: 'Bowlby One SC', Impact, sans-serif;
     font-size: 1.25em;
@@ -40,8 +37,6 @@ table {
 }
 
 .activity td {
-    /* font-family: 'Libre Franklin', sans-serif; */
-    /* font-weight: 600; */
     font-weight: bold;
     font-size: 1em;
     text-align: center;
@@ -49,27 +44,20 @@ table {
 }
 
 tbody:nth-child(even) {
-    /* background-color: #cccccc; */
     background-color: #e4e2e2;
 }
 
 tbody:nth-child(odd) {
-    /* background-color: #eeeeee; */
     background-color: #fdfdfd;
 }
 
 .dom_cell {
-    /* border-right: solid 1px #bbbbbb; */
     border-right: solid 1px #d0d0d0;
 }
 
 
 .radio_slider {
     position: relative;
-    /* background: rgba(255,255,255,.2);  background*/
-    /* margin: 4px auto; */
-    /* overflow: hidden; */
-    /* padding: 0 !important; */
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
@@ -87,22 +75,13 @@ tbody:nth-child(odd) {
 }
 
 .radio_slider label {
-    /* font: 90%/1.618 "Source Sans Pro"; */
-    /* color: rgba(255,255,255,.9); */
-    /* z-index: 0; */
     display: block;
     width: 7em;
-    /* height: 20px; */
     margin: 0 0.25em;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
-    /* cursor: pointer; */
-    /* z-index: 1; */
-    /*background: rgba(0,0,0,.1);*/
     text-align: center;
-    /*margin: 0 2px;*/
-    /* background: blue; /\* make it blue *\/ */
 }
 
 .radio_slider label p {
@@ -111,7 +90,6 @@ tbody:nth-child(odd) {
 
 .radio_slider input:checked+label {
     background: rgba(0, 0, 0, 0.2);
-    /* background-color: #b5b5b5; */
 }
 
 .experience {
@@ -119,7 +97,6 @@ tbody:nth-child(odd) {
 }
 
 .interest {
-    /* height: 2.5em; */
     margin: 0.2em;
 }
 
@@ -129,7 +106,6 @@ tbody:nth-child(odd) {
 
 .interest label {
     width: 4.5em;
-    /* height: 2.5em; */
 }
 
 .radio_slider input:checked+label.interest1 {
