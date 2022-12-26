@@ -83,7 +83,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function(){
-    $('#submit').click(function() {
+    $('.radio_slider').click(function() {
 	var dom = ""
 	var sub = ""
 	var sum_dom = 0
@@ -119,10 +119,16 @@ $(document).ready(function(){
 	sub += sub_checkdigit.toString(36);
 	var url = window.location.href.split("?")[0];
 	if (parseInt(dom, 36) > 0 & parseInt(sub, 36) > 0)
-	    alert(url + "?dom=" + dom + "&sub=" + sub);
+	    document.getElementById("url_text").value = url + "?dom=" + dom + "&sub=" + sub;
 	else if (parseInt(dom, 36) > 0)
-	    alert(url + "?dom=" + dom);
+	    document.getElementById("url_text").value = url + "?dom=" + dom;
 	else if (parseInt(sub, 36) > 0)
-	    alert(url + "?sub=" + sub);
+	    document.getElementById("url_text").value = url + "?sub=" + sub;
+    });
+});
+
+$(document).ready(function(){
+    $('#copy').click(function() {
+	navigator.clipboard.writeText(document.getElementById("url_text").value);
     });
 });
