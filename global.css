@@ -28,6 +28,20 @@ table {
     color: #a20e0e;
 }
 
+.clear_buttons {
+    display: block;
+    margin-left: 6em;
+    margin-top: -1.75em;
+}
+
+.clear_buttons button {
+    background-color: #5a5a5a;
+    color: #d6d6d6;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    font-size: 0.5em;
+}
+
 .topic td {
     background-color: #5a5a5a;
     color: #d6d6d6;
