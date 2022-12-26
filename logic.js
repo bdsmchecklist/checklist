@@ -148,6 +148,7 @@ $(document).ready(function(){
 	    $('input[name="' + a_group + '"]').prop("checked", false);
 	}
 	getURL();
+	// Need to make editable
     });
 });
 
@@ -160,5 +161,36 @@ $(document).ready(function(){
 	    $('input[name="' + a_group + '"]').prop("checked", false);
 	}
 	getURL();
+	// Need to make editable
+    });
+});
+
+$(document).ready(function(){
+    $('#edit_dom').click(function() {
+	for (i = 0; i < num_rows; i++) {
+	    var e_group = 'c1e' + i;
+	    for (j = 0; j < 4; j++) {
+		$('input[name="' + e_group + '"]')[j].disabled = false;
+	    }
+	    var a_group = 'c1a' + i;
+	    for (j = 0; j < 6; j++) {
+		$('input[name="' + a_group + '"]')[j].disabled = false;
+	    }
+	}
+    });
+});
+
+$(document).ready(function(){
+    $('#edit_sub').click(function() {
+	for (i = 0; i < num_rows; i++) {
+	    var e_group = 'c2e' + i;
+	    for (j = 0; j < 4; j++) {
+		$('input[name="' + e_group + '"]')[j].disabled = false;
+	    }
+	    var a_group = 'c2a' + i;
+	    for (j = 0; j < 6; j++) {
+		$('input[name="' + a_group + '"]')[j].disabled = false;
+	    }
+	}
     });
 });
