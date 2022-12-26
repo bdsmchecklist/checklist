@@ -173,3 +173,95 @@ tbody:nth-child(odd) {
     width: 25em;
     margin-right: 1em;
 }
+
+/* Icons from https://iconoir.com/ */
+
+*[class^="iconoir-"]::before,
+*[class*=" iconoir-"]::before {
+  content: " ";
+  display: block;
+  background: currentColor;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  width: 1em;
+  height: 1em;
+}
+*[class^="iconoir-"],
+*[class*=" iconoir-"] {
+  display: block;
+}
+
+.iconoir-copy::before {
+    mask-image:url('data:image/svg+xml;charset=utf-8,<svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.4 20H9.6C9.26863 20 9 19.7314 9 19.4V9.6C9 9.26863 9.26863 9 9.6 9H19.4C19.7314 9 20 9.26863 20 9.6V19.4C20 19.7314 19.7314 20 19.4 20Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 9V4.6C15 4.26863 14.7314 4 14.4 4H4.6C4.26863 4 4 4.26863 4 4.6V14.4C4 14.7314 4.26863 15 4.6 15H9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    -webkit-mask-image:url('data:image/svg+xml;charset=utf-8,<svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.4 20H9.6C9.26863 20 9 19.7314 9 19.4V9.6C9 9.26863 9.26863 9 9.6 9H19.4C19.7314 9 20 9.26863 20 9.6V19.4C20 19.7314 19.7314 20 19.4 20Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 9V4.6C15 4.26863 14.7314 4 14.4 4H4.6C4.26863 4 4 4.26863 4 4.6V14.4C4 14.7314 4.26863 15 4.6 15H9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    transform: scale(2);
+}
+
+.iconoir-trash::before {
+    mask-image:url('data:image/svg+xml;charset=utf-8,<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 9L18.005 20.3463C17.8369 21.3026 17.0062 22 16.0353 22H7.96474C6.99379 22 6.1631 21.3026 5.99496 20.3463L4 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 6L15.375 6M3 6L8.625 6M8.625 6V4C8.625 2.89543 9.52043 2 10.625 2H13.375C14.4796 2 15.375 2.89543 15.375 4V6M8.625 6L15.375 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    -webkit-mask-image:url('data:image/svg+xml;charset=utf-8,<svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 9L18.005 20.3463C17.8369 21.3026 17.0062 22 16.0353 22H7.96474C6.99379 22 6.1631 21.3026 5.99496 20.3463L4 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 6L15.375 6M3 6L8.625 6M8.625 6V4C8.625 2.89543 9.52043 2 10.625 2H13.375C14.4796 2 15.375 2.89543 15.375 4V6M8.625 6L15.375 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    transform: scale(1.5);
+}
+
+.iconoir-edit-pencil::before {
+    mask-image:url('data:image/svg+xml;charset=utf-8,<svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0207 5.82839L15.8491 2.99996L20.7988 7.94971L17.9704 10.7781M13.0207 5.82839L3.41405 15.435C3.22652 15.6225 3.12116 15.8769 3.12116 16.1421V20.6776H7.65669C7.92191 20.6776 8.17626 20.5723 8.3638 20.3847L17.9704 10.7781M13.0207 5.82839L17.9704 10.7781" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    -webkit-mask-image:url('data:image/svg+xml;charset=utf-8,<svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0207 5.82839L15.8491 2.99996L20.7988 7.94971L17.9704 10.7781M13.0207 5.82839L3.41405 15.435C3.22652 15.6225 3.12116 15.8769 3.12116 16.1421V20.6776H7.65669C7.92191 20.6776 8.17626 20.5723 8.3638 20.3847L17.9704 10.7781M13.0207 5.82839L17.9704 10.7781" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    transform: scale(1.5);
+}
+
+#copy, #clear_dom, #clear_sub, #edit_dom, #edit_sub {
+    background-color: transparent;
+    border: none;
+    color: #d6d6d6;
+    cursor: pointer;
+}
+
+#copy:hover, #clear_dom:hover, #clear_sub:hover, #edit_dom:hover, #edit_sub:hover {
+    color: #5a5a5a;
+}
+
+#copy:active, #clear_dom:active, #clear_sub:active, #edit_dom:active, #edit_sub:active {
+    color: #a20e0e;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    background-color: #5a5a5a;
+    color: #d6d6d6;
+    text-align: center;
+    padding: 0.5em;
+    margin-top: -4em;
+    margin-left: -3em;
+    border-radius: 0.5em;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#copy:hover .tooltiptext,
+#clear_dom:hover .tooltiptext,
+#clear_sub:hover .tooltiptext,
+#edit_dom:hover .tooltiptext,
+#edit_sub:hover .tooltiptext
+{
+  visibility: visible;
+}
+
+#copy:active .tooltiptext,
+#clear_dom:active .tooltiptext,
+#clear_sub:active .tooltiptext,
+#edit_dom:active .tooltiptext,
+#edit_sub:active .tooltiptext
+{
+  background-color: #a20e0e;
+}
+
+#clear_dom .tooltiptext,
+#clear_sub .tooltiptext {
+    margin-left: -4em;
+}
+
+#edit_dom .tooltiptext,
+#edit_sub .tooltiptext {
+    margin-left: -1.5em;
+}
