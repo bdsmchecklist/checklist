@@ -82,53 +82,83 @@ $(document).ready(function() {
 });
 
 
+function getURL() {
+    var dom = ""
+    var sub = ""
+    var sum_dom = 0
+    var sum_sub = 0
+    for (i = 0; i < num_rows; i++) {
+	var e_group = 'c1e' + i;
+	var e_result = parseInt($('input[name="' + e_group + '"]:checked').val());
+	if (isNaN(e_result))
+	    e_result = 0;
+	var a_group = 'c1a' + i;
+	var a_result = parseInt($('input[name="' + a_group + '"]:checked').val());
+	if (isNaN(a_result))
+	    a_result = 0;
+	var component = e_result * 7 + a_result;
+	dom = component.toString(36) + dom;
+	sum_dom += component;
+
+	var e_group = 'c2e' + i;
+	var e_result = parseInt($('input[name="' + e_group + '"]:checked').val());
+	if (isNaN(e_result))
+	    e_result = 0;
+	var a_group = 'c2a' + i;
+	var a_result = parseInt($('input[name="' + a_group + '"]:checked').val());
+	if (isNaN(a_result))
+	    a_result = 0;
+	var component = e_result * 7 + a_result;
+	sub = component.toString(36) + sub;
+	sum_sub += component;
+    }
+    dom_checkdigit = sum_dom % 36;
+    sub_checkdigit = sum_sub % 36;
+    dom += dom_checkdigit.toString(36);
+    sub += sub_checkdigit.toString(36);
+    var url = window.location.href.split("?")[0];
+    if (parseInt(dom, 36) > 0 & parseInt(sub, 36) > 0)
+	document.getElementById("url_text").value = url + "?dom=" + dom + "&sub=" + sub;
+    else if (parseInt(dom, 36) > 0)
+	document.getElementById("url_text").value = url + "?dom=" + dom;
+    else if (parseInt(sub, 36) > 0)
+	document.getElementById("url_text").value = url + "?sub=" + sub;
+    else
+	document.getElementById("url_text").value = "";
+}
+
 $(document).ready(function(){
     $('.radio_slider').click(function() {
-	var dom = ""
-	var sub = ""
-	var sum_dom = 0
-	var sum_sub = 0
-	for (i = 0; i < num_rows; i++) {
-	    var e_group = 'c1e' + i;
-	    var e_result = parseInt($('input[name="' + e_group + '"]:checked').val());
-	    if (isNaN(e_result))
-		e_result = 0;
-	    var a_group = 'c1a' + i;
-	    var a_result = parseInt($('input[name="' + a_group + '"]:checked').val());
-	    if (isNaN(a_result))
-		a_result = 0;
-	    var component = e_result * 7 + a_result;
-	    dom = component.toString(36) + dom;
-	    sum_dom += component;
-
-	    var e_group = 'c2e' + i;
-	    var e_result = parseInt($('input[name="' + e_group + '"]:checked').val());
-	    if (isNaN(e_result))
-		e_result = 0;
-	    var a_group = 'c2a' + i;
-	    var a_result = parseInt($('input[name="' + a_group + '"]:checked').val());
-	    if (isNaN(a_result))
-		a_result = 0;
-	    var component = e_result * 7 + a_result;
-	    sub = component.toString(36) + sub;
-	    sum_sub += component;
-	}
-	dom_checkdigit = sum_dom % 36;
-	sub_checkdigit = sum_sub % 36;
-	dom += dom_checkdigit.toString(36);
-	sub += sub_checkdigit.toString(36);
-	var url = window.location.href.split("?")[0];
-	if (parseInt(dom, 36) > 0 & parseInt(sub, 36) > 0)
-	    document.getElementById("url_text").value = url + "?dom=" + dom + "&sub=" + sub;
-	else if (parseInt(dom, 36) > 0)
-	    document.getElementById("url_text").value = url + "?dom=" + dom;
-	else if (parseInt(sub, 36) > 0)
-	    document.getElementById("url_text").value = url + "?sub=" + sub;
+	getURL();
     });
 });
 
 $(document).ready(function(){
     $('#copy').click(function() {
 	navigator.clipboard.writeText(document.getElementById("url_text").value);
+    });
+});
+
+$(document).ready(function(){
+    $('#clear_dom').click(function() {
+	for (i = 0; i < num_rows; i++) {
+	    var e_group = 'c1e' + i;
+	    $('input[name="' + e_group + '"]').prop("checked", false);
+	    var a_group = 'c1a' + i;
+	    $('input[name="' + a_group + '"]').prop("checked", false);
+	}
+	getURL();
+    });
+});
+
+$(document).ready(function(){
+    $('#clear_sub').click(function() {
+	for (i = 0; i < num_rows; i++) {
+	    var e_group = 'c2e' + i;
+	    $('input[name="' + e_group + '"]').prop("checked", false);
+	    var a_group = 'c2a' + i;
+	    $('input[name="' + a_group + '"]').prop("checked", false);
+	}
+	getURL();
     });
 });
