@@ -148,6 +148,7 @@ $(document).ready(function(){
 	    $('input[name="' + a_group + '"]').prop("checked", false);
 	}
 	getURL();
+	// Need to make editable
     });
 });
 
@@ -160,6 +161,7 @@ $(document).ready(function(){
 	    $('input[name="' + a_group + '"]').prop("checked", false);
 	}
 	getURL();
+	// Need to make editable
     });
 });
 
