@@ -1,6 +1,11 @@
+/********/
+/* Page */
+/********/
+
 body {
     background-color: #222222;
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
 }
 
 #title {
@@ -8,38 +13,28 @@ body {
     font-weight: bold;
     font-size: 2.5em;
     color: #a20e0e;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
 }
+
+/*********/
+/* Table */
+/*********/
 
 #checklist_table {
     width: 60em;
     margin-left: auto; 
     margin-right: auto;
-}
-
-table {
     border: 0;
     border-spacing: 0;
 }
 
-#checklist_head {
+.header_name {
     font-family: 'Bowlby One SC', Impact, sans-serif;
     font-weight: bold;
     font-size: 1.75em;
     color: #a20e0e;
-}
-
-.clear_buttons {
-    display: block;
-    margin-left: 6em;
-    margin-top: -1.75em;
-}
-
-.clear_buttons button {
-    background-color: #5a5a5a;
-    color: #d6d6d6;
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 600;
-    font-size: 0.5em;
 }
 
 .topic td {
@@ -69,6 +64,9 @@ tbody:nth-child(odd) {
     border-right: solid 1px #d0d0d0;
 }
 
+/*****************/
+/* Radio sliders */
+/*****************/
 
 .radio_slider {
     position: relative;
@@ -162,19 +160,94 @@ tbody:nth-child(odd) {
     background-color: #7289f8;
 }
 
+/***********/
+/* URL box */
+/***********/
+
 #url_area {
     width: 60em;
     margin-left: auto; 
     margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 4em;
     text-align: center;
 }
 
 #url_text {
     width: 25em;
     margin-right: 1em;
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 0.2em;
 }
 
-/* Icons from https://iconoir.com/ */
+/***********/
+/* Buttons */
+/***********/
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #d6d6d6;
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #5a5a5a;
+}
+
+button:active {
+    color: #a20e0e;
+}
+
+#dom_edit_buttons {
+    display: block;
+    margin-left: -25em;
+    margin-top: -2em;
+    margin-bottom: 0.75em;
+}
+
+#sub_edit_buttons {
+    display: block;
+    margin-left: 25em;
+    margin-top: -2em;
+    margin-bottom: 0.75em;
+}
+
+.tool_tip {
+    visibility: hidden;
+    background-color: #5a5a5a;
+    color: #d6d6d6;
+    text-align: center;
+    padding: 0.5em;
+    margin-top: -4em;
+    margin-left: -3em;
+    border-radius: 0.5em;
+    position: absolute;
+    z-index: 1;
+}
+
+button:hover .tool_tip {
+  visibility: visible;
+}
+
+button:active .tool_tip {
+  background-color: #a20e0e;
+}
+
+#clear_dom .tool_tip,
+#clear_sub .too_ltip {
+    margin-left: -4em;
+}
+
+#edit_dom .tool_tip,
+#edit_sub .tool_tip {
+    margin-left: -1.5em;
+}
+
+/* Button icons from https://iconoir.com/ */
 
 *[class^="iconoir-"]::before,
 *[class*=" iconoir-"]::before {
@@ -186,6 +259,7 @@ tbody:nth-child(odd) {
   width: 1em;
   height: 1em;
 }
+
 *[class^="iconoir-"],
 *[class*=" iconoir-"] {
   display: block;
@@ -207,61 +281,4 @@ tbody:nth-child(odd) {
     mask-image:url('data:image/svg+xml;charset=utf-8,<svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0207 5.82839L15.8491 2.99996L20.7988 7.94971L17.9704 10.7781M13.0207 5.82839L3.41405 15.435C3.22652 15.6225 3.12116 15.8769 3.12116 16.1421V20.6776H7.65669C7.92191 20.6776 8.17626 20.5723 8.3638 20.3847L17.9704 10.7781M13.0207 5.82839L17.9704 10.7781" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>');
     -webkit-mask-image:url('data:image/svg+xml;charset=utf-8,<svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0207 5.82839L15.8491 2.99996L20.7988 7.94971L17.9704 10.7781M13.0207 5.82839L3.41405 15.435C3.22652 15.6225 3.12116 15.8769 3.12116 16.1421V20.6776H7.65669C7.92191 20.6776 8.17626 20.5723 8.3638 20.3847L17.9704 10.7781M13.0207 5.82839L17.9704 10.7781" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>');
     transform: scale(1.5);
-}
-
-#copy, #clear_dom, #clear_sub, #edit_dom, #edit_sub {
-    background-color: transparent;
-    border: none;
-    color: #d6d6d6;
-    cursor: pointer;
-}
-
-#copy:hover, #clear_dom:hover, #clear_sub:hover, #edit_dom:hover, #edit_sub:hover {
-    color: #5a5a5a;
-}
-
-#copy:active, #clear_dom:active, #clear_sub:active, #edit_dom:active, #edit_sub:active {
-    color: #a20e0e;
-}
-
-.tooltiptext {
-    visibility: hidden;
-    background-color: #5a5a5a;
-    color: #d6d6d6;
-    text-align: center;
-    padding: 0.5em;
-    margin-top: -4em;
-    margin-left: -3em;
-    border-radius: 0.5em;
-    position: absolute;
-    z-index: 1;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-#copy:hover .tooltiptext,
-#clear_dom:hover .tooltiptext,
-#clear_sub:hover .tooltiptext,
-#edit_dom:hover .tooltiptext,
-#edit_sub:hover .tooltiptext
-{
-  visibility: visible;
-}
-
-#copy:active .tooltiptext,
-#clear_dom:active .tooltiptext,
-#clear_sub:active .tooltiptext,
-#edit_dom:active .tooltiptext,
-#edit_sub:active .tooltiptext
-{
-  background-color: #a20e0e;
-}
-
-#clear_dom .tooltiptext,
-#clear_sub .tooltiptext {
-    margin-left: -4em;
-}
-
-#edit_dom .tooltiptext,
-#edit_sub .tooltiptext {
-    margin-left: -1.5em;
 }

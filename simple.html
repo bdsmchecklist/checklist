@@ -18,10 +18,18 @@
   <table id="checklist_table">
     <thead id="checklist_head">
       <tr>
-	<th class="dom">Dom <span class="clear_buttons"><button id="clear_dom"><i class="iconoir-trash"></i><span class="tooltiptext">Clear answers</span></button>
-	<button id="edit_dom"><i class="iconoir-edit-pencil"></i><span class="tooltiptext">Edit</span></button></span></th>
-	<th class="sub">Sub <span class="clear_buttons"><button id="clear_sub"><i class="iconoir-trash"></i><span class="tooltiptext">Clear answers</span></button>
-	<button id="edit_sub"><i class="iconoir-edit-pencil"></i><span class="tooltiptext">Edit</span></button></span></th>
+	<th>
+	  <span class="header_name">Dom</span>
+	  <span id="dom_edit_buttons">
+	    <button id="clear_dom"><i class="iconoir-trash"></i><span class="tool_tip">Clear answers</span></button>
+	    <button id="edit_dom"><i class="iconoir-edit-pencil"></i><span class="tool_tip">Edit</span></button>
+	</span></th>
+	<th>
+	  <span class="header_name">Sub</span>
+	  <span id="sub_edit_buttons">
+	    <button id="clear_sub"><i class="iconoir-trash"></i><span class="tool_tip">Clear answers</span></button>
+	    <button id="edit_sub"><i class="iconoir-edit-pencil"></i><span class="tool_tip">Edit</span></button>
+	</span></th>
       </tr>
     </thead>
     <tbody class="topic_group">
@@ -5502,7 +5510,8 @@
     </tbody>
 
   </table>
-  <p id="url_area"><input type="text" id="url_text" readonly></input>
-    <button id="copy"><i class="iconoir-copy"></i><span class="tooltiptext">Copy URL</span></button></p>
+  <div id="url_area">
+    <input type="text" id="url_text" readonly></input>
+    <button id="copy"><i class="iconoir-copy"></i><span class="tool_tip">Copy URL</span></button></div>
 </body>
 </html>
