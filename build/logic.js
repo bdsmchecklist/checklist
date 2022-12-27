@@ -8,6 +8,7 @@ function getParameterByName(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
+
 // Give the parameter a variable name
 var dom_set = getParameterByName('dom');
 if (dom_set == null) {
@@ -24,8 +25,8 @@ if (sub_set == null) {
     }
 }
 
-
 $(document).ready(function() {
+    // Parse the parameters into radio slider values
     sum_dom = 0;
     sum_sub = 0;
     for (i = 0; i < num_rows; i++) {
@@ -83,6 +84,7 @@ $(document).ready(function() {
 
 
 function getURL() {
+    // Convert the radio sliders into a URL and fill the URL text
     var dom = ""
     var sub = ""
     var sum_dom = 0
@@ -127,70 +129,74 @@ function getURL() {
 	document.getElementById("url_text").value = "";
 }
 
+// Every time a radio slider is clicked, recompute the URL
 $(document).ready(function(){
     $('.radio_slider').click(function() {
 	getURL();
     });
 });
 
+// When the copy button is clicked, add the URL to the clipboard
 $(document).ready(function(){
     $('#copy').click(function() {
 	navigator.clipboard.writeText(document.getElementById("url_text").value);
+	document.getElementById('url_text').select();
+	document.getElementByID('url_text').focus();
     });
 });
 
+function makeEditable(column) {
+    // Make the radio sliders editable.
+    // column: 1 for dom and 2 for sub
+    for (i = 0; i < num_rows; i++) {
+	var e_group = 'c' + column + 'e' + i;
+	for (j = 0; j < 4; j++) {
+	    $('input[name="' + e_group + '"]')[j].disabled = false;
+	}
+	var a_group = 'c' + column + 'a' + i;
+	for (j = 0; j < 6; j++) {
+	    $('input[name="' + a_group + '"]')[j].disabled = false;
+	}
+    }
+}
+
+function clearValues(column) {
+    // Clear radio slider values
+    // column: 1 for dom and 2 for sub
+    for (i = 0; i < num_rows; i++) {
+	var e_group = 'c' + column + 'e' + i;
+	$('input[name="' + e_group + '"]').prop("checked", false);
+	var a_group = 'c' + column + 'a' + i;
+	$('input[name="' + a_group + '"]').prop("checked", false);
+    }
+    makeEditable(column);
+    getURL();
+}
+
+// Clear buttons
+
 $(document).ready(function(){
     $('#clear_dom').click(function() {
-	for (i = 0; i < num_rows; i++) {
-	    var e_group = 'c1e' + i;
-	    $('input[name="' + e_group + '"]').prop("checked", false);
-	    var a_group = 'c1a' + i;
-	    $('input[name="' + a_group + '"]').prop("checked", false);
-	}
-	getURL();
-	// Need to make editable
+	clearValues(1);
     });
 });
 
 $(document).ready(function(){
     $('#clear_sub').click(function() {
-	for (i = 0; i < num_rows; i++) {
-	    var e_group = 'c2e' + i;
-	    $('input[name="' + e_group + '"]').prop("checked", false);
-	    var a_group = 'c2a' + i;
-	    $('input[name="' + a_group + '"]').prop("checked", false);
-	}
-	getURL();
-	// Need to make editable
+	clearValues(2);
     });
 });
 
+// Edit buttons
+
 $(document).ready(function(){
     $('#edit_dom').click(function() {
-	for (i = 0; i < num_rows; i++) {
-	    var e_group = 'c1e' + i;
-	    for (j = 0; j < 4; j++) {
-		$('input[name="' + e_group + '"]')[j].disabled = false;
-	    }
-	    var a_group = 'c1a' + i;
-	    for (j = 0; j < 6; j++) {
-		$('input[name="' + a_group + '"]')[j].disabled = false;
-	    }
-	}
+	makeEditable(1);
     });
 });
 
 $(document).ready(function(){
     $('#edit_sub').click(function() {
-	for (i = 0; i < num_rows; i++) {
-	    var e_group = 'c2e' + i;
-	    for (j = 0; j < 4; j++) {
-		$('input[name="' + e_group + '"]')[j].disabled = false;
-	    }
-	    var a_group = 'c2a' + i;
-	    for (j = 0; j < 6; j++) {
-		$('input[name="' + a_group + '"]')[j].disabled = false;
-	    }
-	}
+	makeEditable(2);
     });
 });
