@@ -63,13 +63,19 @@ body {
     padding:0 1em;
 }
 
-/* Column header: Dom .... Sub, aligned over the answer columns */
+/* Column header: Dom .... Sub, aligned over the answer columns.
+   Pinned to the top so it (and the edit/clear buttons) stay in view. */
 #checklist_head {
+    position:sticky;
+    top:0;
+    z-index:5;
     display:grid;
     grid-template-columns:var(--cols);
     align-items:center;
     gap:0.5em;
-    padding:0 0.4em 0.4em;
+    padding:0.5em 0.4em;
+    background:var(--ground);
+    box-shadow:0 4px 12px rgba(0,0,0,.4);
 }
 
 .head_col {
