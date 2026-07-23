@@ -16,6 +16,16 @@
 <body>
   <h1 id="title">BDSM Checklist</h1>
 
+  <div id="intro">
+    <p>Rate each activity as a <strong>dom</strong> or a <strong>sub</strong>.</p>
+    <p>Your answers will be available to share with a link at the bottom.</p>
+  </div>
+
+  <div id="received" class="notice" hidden>
+    <p id="received_text">This is a shared checklist. Clear the answers for your role to fill in responses.</p>
+    <button type="button" class="notice_close" id="received_close" aria-label="Dismiss">×</button>
+  </div>
+
   <div id="checklist">
     <div id="checklist_head">
       <div class="head_col">
@@ -5217,6 +5227,7 @@
   </div>
 
   <div id="url_area">
+    <p id="url_label">Copy this link to share your answers.</p>
     <input type="text" id="url_text" readonly></input>
     <button id="copy"><i class="iconoir-copy"></i><span class="tool_tip">Copy URL</span></button>
   </div>
