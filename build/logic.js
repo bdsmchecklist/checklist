@@ -200,3 +200,14 @@ $(document).ready(function(){
 	makeEditable(2);
     });
 });
+
+// Show the shared-checklist banner only when both dom and sub answers were
+// loaded from the URL; if one role is left free there is nothing to explain.
+$(document).ready(function() {
+    if (sum_dom > 0 && sum_sub > 0)
+	document.getElementById('received').hidden = false;
+
+    $('#received_close').click(function() {
+	document.getElementById('received').hidden = true;
+    });
+});

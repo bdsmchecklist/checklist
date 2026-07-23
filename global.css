@@ -52,6 +52,53 @@ body {
     margin:0.6em auto 0.5em;
 }
 
+/***********/
+/* Notices */
+/***********/
+
+.notice {
+    position:relative;
+    width:62em;
+    max-width:100%;
+    margin:0 auto 1em;
+    padding:0.8em 2.4em 0.8em 1em;
+    background:var(--sheet-b);
+    color:var(--c-ink);
+    border-left:5px solid var(--red-bright);
+    border-radius:8px;
+    box-shadow:0 4px 16px rgba(0,0,0,.3);
+    font-size:0.95em;
+    line-height:1.4;
+}
+
+.notice p { margin:0.2em 0; }
+.notice strong { color:var(--red); }
+
+/* Intro is a permanent lede under the title, sitting on the dark ground —
+   not a dismissible card like .notice */
+#intro {
+    max-width:42em;
+    margin:-0.1em auto 1.4em;
+    padding:0 1em;
+    text-align:center;
+    color:var(--ink);
+    line-height:1.45;
+}
+#intro p { margin:0.2em 0; }
+#intro strong { color:var(--red); font-weight:600; }
+
+.notice_close {
+    position:absolute;
+    top:0.25em;
+    right:0.4em;
+    font-size:1.5em;
+    line-height:1;
+    color:var(--c-muted);
+    padding:0.1em 0.3em;
+}
+.notice_close:hover { color:var(--red); }
+.notice_close:active { color:var(--red); }
+
 /*************/
 /* Checklist */
 /*************/
@@ -260,6 +307,12 @@ body {
     margin:2em auto 4em;
     padding:0 1em;
     text-align:center;
+}
+
+#url_label {
+    margin:0 0 0.6em;
+    color:var(--ink);
+    font-size:0.95em;
 }
 
 #url_text {
