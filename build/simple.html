@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BDSM Checklist</title>
 <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
@@ -15,32 +16,29 @@
 <body>
   <h1 id="title">BDSM Checklist</h1>
 
-  <table id="checklist_table">
-    <thead id="checklist_head">
-      <tr>
-	<th>
-	  <span class="header_name">Dom</span>
-	  <span id="dom_edit_buttons">
-	    <button id="clear_dom"><i class="iconoir-trash"></i><span class="tool_tip">Clear answers</span></button>
-	    <button id="edit_dom"><i class="iconoir-edit-pencil"></i><span class="tool_tip">Edit</span></button>
-	</span></th>
-	<th>
-	  <span class="header_name">Sub</span>
-	  <span id="sub_edit_buttons">
-	    <button id="clear_sub"><i class="iconoir-trash"></i><span class="tool_tip">Clear answers</span></button>
-	    <button id="edit_sub"><i class="iconoir-edit-pencil"></i><span class="tool_tip">Edit</span></button>
-	</span></th>
-      </tr>
-    </thead>
-    <tbody class="topic_group">
-      <tr class="topic">
-      <td colspan="2">Bondage</td>
-      </tr>
-      <tr class="activity">
-        <td colspan="2">
-          Bondage
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+  <div id="checklist">
+    <div id="checklist_head">
+      <div class="head_col">
+        <span class="header_name">Dom</span>
+        <span id="dom_edit_buttons">
+          <button id="clear_dom"><i class="iconoir-trash"></i><span class="tool_tip">Clear answers</span></button>
+          <button id="edit_dom"><i class="iconoir-edit-pencil"></i><span class="tool_tip">Edit</span></button>
+        </span>
+      </div>
+      <div class="head_spacer"></div>
+      <div class="head_col">
+        <span class="header_name">Sub</span>
+        <span id="sub_edit_buttons">
+          <button id="clear_sub"><i class="iconoir-trash"></i><span class="tool_tip">Clear answers</span></button>
+          <button id="edit_sub"><i class="iconoir-edit-pencil"></i><span class="tool_tip">Edit</span></button>
+        </span>
+      </div>
+    </div>
+
+    <div id="checklist_body">
+      <div class="topic">Bondage</div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e0" class="experience radio_slider">
             <input id="c1e01" name="c1e0" value="1" type="radio">
             <label for="c1e01" class="experience1">Haven't done</label>
@@ -65,8 +63,9 @@
             <input id="c1a06" name="c1a0" value="6" type="radio">
             <label for="c1a06" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Bondage</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e0" class="experience radio_slider">
             <input id="c2e01" name="c2e0" value="1" type="radio">
             <label for="c2e01" class="experience1">Haven't done</label>
@@ -91,14 +90,10 @@
             <input id="c2a06" name="c2a0" value="6" type="radio">
             <label for="c2a06" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Collars
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e1" class="experience radio_slider">
             <input id="c1e11" name="c1e1" value="1" type="radio">
             <label for="c1e11" class="experience1">Haven't done</label>
@@ -123,8 +118,9 @@
             <input id="c1a16" name="c1a1" value="6" type="radio">
             <label for="c1a16" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Collars</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e1" class="experience radio_slider">
             <input id="c2e11" name="c2e1" value="1" type="radio">
             <label for="c2e11" class="experience1">Haven't done</label>
@@ -149,14 +145,10 @@
             <input id="c2a16" name="c2a1" value="6" type="radio">
             <label for="c2a16" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Gags
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e2" class="experience radio_slider">
             <input id="c1e21" name="c1e2" value="1" type="radio">
             <label for="c1e21" class="experience1">Haven't done</label>
@@ -181,8 +173,9 @@
             <input id="c1a26" name="c1a2" value="6" type="radio">
             <label for="c1a26" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Gags</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e2" class="experience radio_slider">
             <input id="c2e21" name="c2e2" value="1" type="radio">
             <label for="c2e21" class="experience1">Haven't done</label>
@@ -207,14 +200,10 @@
             <input id="c2a26" name="c2a2" value="6" type="radio">
             <label for="c2a26" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Hoods
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e3" class="experience radio_slider">
             <input id="c1e31" name="c1e3" value="1" type="radio">
             <label for="c1e31" class="experience1">Haven't done</label>
@@ -239,8 +228,9 @@
             <input id="c1a36" name="c1a3" value="6" type="radio">
             <label for="c1a36" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Hoods</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e3" class="experience radio_slider">
             <input id="c2e31" name="c2e3" value="1" type="radio">
             <label for="c2e31" class="experience1">Haven't done</label>
@@ -265,14 +255,10 @@
             <input id="c2a36" name="c2a3" value="6" type="radio">
             <label for="c2a36" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Handcuffs
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e4" class="experience radio_slider">
             <input id="c1e41" name="c1e4" value="1" type="radio">
             <label for="c1e41" class="experience1">Haven't done</label>
@@ -297,8 +283,9 @@
             <input id="c1a46" name="c1a4" value="6" type="radio">
             <label for="c1a46" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Handcuffs</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e4" class="experience radio_slider">
             <input id="c2e41" name="c2e4" value="1" type="radio">
             <label for="c2e41" class="experience1">Haven't done</label>
@@ -323,14 +310,10 @@
             <input id="c2a46" name="c2a4" value="6" type="radio">
             <label for="c2a46" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Hog tie
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e5" class="experience radio_slider">
             <input id="c1e51" name="c1e5" value="1" type="radio">
             <label for="c1e51" class="experience1">Haven't done</label>
@@ -355,8 +338,9 @@
             <input id="c1a56" name="c1a5" value="6" type="radio">
             <label for="c1a56" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Hog tie</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e5" class="experience radio_slider">
             <input id="c2e51" name="c2e5" value="1" type="radio">
             <label for="c2e51" class="experience1">Haven't done</label>
@@ -381,14 +365,10 @@
             <input id="c2a56" name="c2a5" value="6" type="radio">
             <label for="c2a56" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Mummification
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e6" class="experience radio_slider">
             <input id="c1e61" name="c1e6" value="1" type="radio">
             <label for="c1e61" class="experience1">Haven't done</label>
@@ -413,8 +393,9 @@
             <input id="c1a66" name="c1a6" value="6" type="radio">
             <label for="c1a66" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Mummification</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e6" class="experience radio_slider">
             <input id="c2e61" name="c2e6" value="1" type="radio">
             <label for="c2e61" class="experience1">Haven't done</label>
@@ -439,14 +420,10 @@
             <input id="c2a66" name="c2a6" value="6" type="radio">
             <label for="c2a66" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Sleepsack
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e7" class="experience radio_slider">
             <input id="c1e71" name="c1e7" value="1" type="radio">
             <label for="c1e71" class="experience1">Haven't done</label>
@@ -471,8 +448,9 @@
             <input id="c1a76" name="c1a7" value="6" type="radio">
             <label for="c1a76" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Sleepsack</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e7" class="experience radio_slider">
             <input id="c2e71" name="c2e7" value="1" type="radio">
             <label for="c2e71" class="experience1">Haven't done</label>
@@ -497,14 +475,10 @@
             <input id="c2a76" name="c2a7" value="6" type="radio">
             <label for="c2a76" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Suspension
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e8" class="experience radio_slider">
             <input id="c1e81" name="c1e8" value="1" type="radio">
             <label for="c1e81" class="experience1">Haven't done</label>
@@ -529,8 +503,9 @@
             <input id="c1a86" name="c1a8" value="6" type="radio">
             <label for="c1a86" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Suspension</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e8" class="experience radio_slider">
             <input id="c2e81" name="c2e8" value="1" type="radio">
             <label for="c2e81" class="experience1">Haven't done</label>
@@ -555,14 +530,10 @@
             <input id="c2a86" name="c2a8" value="6" type="radio">
             <label for="c2a86" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Cages
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e9" class="experience radio_slider">
             <input id="c1e91" name="c1e9" value="1" type="radio">
             <label for="c1e91" class="experience1">Haven't done</label>
@@ -587,8 +558,9 @@
             <input id="c1a96" name="c1a9" value="6" type="radio">
             <label for="c1a96" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Cages</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e9" class="experience radio_slider">
             <input id="c2e91" name="c2e9" value="1" type="radio">
             <label for="c2e91" class="experience1">Haven't done</label>
@@ -613,14 +585,10 @@
             <input id="c2a96" name="c2a9" value="6" type="radio">
             <label for="c2a96" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Sensory deprivation
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e10" class="experience radio_slider">
             <input id="c1e101" name="c1e10" value="1" type="radio">
             <label for="c1e101" class="experience1">Haven't done</label>
@@ -645,8 +613,9 @@
             <input id="c1a106" name="c1a10" value="6" type="radio">
             <label for="c1a106" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Sensory deprivation</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e10" class="experience radio_slider">
             <input id="c2e101" name="c2e10" value="1" type="radio">
             <label for="c2e101" class="experience1">Haven't done</label>
@@ -671,18 +640,11 @@
             <input id="c2a106" name="c2a10" value="6" type="radio">
             <label for="c2a106" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-    <tbody class="topic_group">
-      <tr class="topic">
-      <td colspan="2">Dom / sub</td>
-      </tr>
-      <tr class="activity">
-        <td colspan="2">
-          Protocol
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="topic">Dom / sub</div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e11" class="experience radio_slider">
             <input id="c1e111" name="c1e11" value="1" type="radio">
             <label for="c1e111" class="experience1">Haven't done</label>
@@ -707,8 +669,9 @@
             <input id="c1a116" name="c1a11" value="6" type="radio">
             <label for="c1a116" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Protocol</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e11" class="experience radio_slider">
             <input id="c2e111" name="c2e11" value="1" type="radio">
             <label for="c2e111" class="experience1">Haven't done</label>
@@ -733,14 +696,10 @@
             <input id="c2a116" name="c2a11" value="6" type="radio">
             <label for="c2a116" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Humiliation
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e12" class="experience radio_slider">
             <input id="c1e121" name="c1e12" value="1" type="radio">
             <label for="c1e121" class="experience1">Haven't done</label>
@@ -765,8 +724,9 @@
             <input id="c1a126" name="c1a12" value="6" type="radio">
             <label for="c1a126" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Humiliation</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e12" class="experience radio_slider">
             <input id="c2e121" name="c2e12" value="1" type="radio">
             <label for="c2e121" class="experience1">Haven't done</label>
@@ -791,14 +751,10 @@
             <input id="c2a126" name="c2a12" value="6" type="radio">
             <label for="c2a126" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Small penis humiliation
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e13" class="experience radio_slider">
             <input id="c1e131" name="c1e13" value="1" type="radio">
             <label for="c1e131" class="experience1">Haven't done</label>
@@ -823,8 +779,9 @@
             <input id="c1a136" name="c1a13" value="6" type="radio">
             <label for="c1a136" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Small penis humiliation</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e13" class="experience radio_slider">
             <input id="c2e131" name="c2e13" value="1" type="radio">
             <label for="c2e131" class="experience1">Haven't done</label>
@@ -849,14 +806,10 @@
             <input id="c2a136" name="c2a13" value="6" type="radio">
             <label for="c2a136" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Symbolic collar
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e14" class="experience radio_slider">
             <input id="c1e141" name="c1e14" value="1" type="radio">
             <label for="c1e141" class="experience1">Haven't done</label>
@@ -881,8 +834,9 @@
             <input id="c1a146" name="c1a14" value="6" type="radio">
             <label for="c1a146" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Symbolic collar</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e14" class="experience radio_slider">
             <input id="c2e141" name="c2e14" value="1" type="radio">
             <label for="c2e141" class="experience1">Haven't done</label>
@@ -907,14 +861,10 @@
             <input id="c2a146" name="c2a14" value="6" type="radio">
             <label for="c2a146" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Forced nudity
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e15" class="experience radio_slider">
             <input id="c1e151" name="c1e15" value="1" type="radio">
             <label for="c1e151" class="experience1">Haven't done</label>
@@ -939,8 +889,9 @@
             <input id="c1a156" name="c1a15" value="6" type="radio">
             <label for="c1a156" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Forced nudity</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e15" class="experience radio_slider">
             <input id="c2e151" name="c2e15" value="1" type="radio">
             <label for="c2e151" class="experience1">Haven't done</label>
@@ -965,14 +916,10 @@
             <input id="c2a156" name="c2a15" value="6" type="radio">
             <label for="c2a156" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Chastity (shorter than a month)
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e16" class="experience radio_slider">
             <input id="c1e161" name="c1e16" value="1" type="radio">
             <label for="c1e161" class="experience1">Haven't done</label>
@@ -997,8 +944,9 @@
             <input id="c1a166" name="c1a16" value="6" type="radio">
             <label for="c1a166" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Chastity (shorter than a month)</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e16" class="experience radio_slider">
             <input id="c2e161" name="c2e16" value="1" type="radio">
             <label for="c2e161" class="experience1">Haven't done</label>
@@ -1023,14 +971,10 @@
             <input id="c2a166" name="c2a16" value="6" type="radio">
             <label for="c2a166" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Chastity (longer than a month)
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e17" class="experience radio_slider">
             <input id="c1e171" name="c1e17" value="1" type="radio">
             <label for="c1e171" class="experience1">Haven't done</label>
@@ -1055,8 +999,9 @@
             <input id="c1a176" name="c1a17" value="6" type="radio">
             <label for="c1a176" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Chastity (longer than a month)</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e17" class="experience radio_slider">
             <input id="c2e171" name="c2e17" value="1" type="radio">
             <label for="c2e171" class="experience1">Haven't done</label>
@@ -1081,14 +1026,10 @@
             <input id="c2a176" name="c2a17" value="6" type="radio">
             <label for="c2a176" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Objectification
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e18" class="experience radio_slider">
             <input id="c1e181" name="c1e18" value="1" type="radio">
             <label for="c1e181" class="experience1">Haven't done</label>
@@ -1113,8 +1054,9 @@
             <input id="c1a186" name="c1a18" value="6" type="radio">
             <label for="c1a186" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Objectification</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e18" class="experience radio_slider">
             <input id="c2e181" name="c2e18" value="1" type="radio">
             <label for="c2e181" class="experience1">Haven't done</label>
@@ -1139,14 +1081,10 @@
             <input id="c2a186" name="c2a18" value="6" type="radio">
             <label for="c2a186" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Inspections
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e19" class="experience radio_slider">
             <input id="c1e191" name="c1e19" value="1" type="radio">
             <label for="c1e191" class="experience1">Haven't done</label>
@@ -1171,8 +1109,9 @@
             <input id="c1a196" name="c1a19" value="6" type="radio">
             <label for="c1a196" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Inspections</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e19" class="experience radio_slider">
             <input id="c2e191" name="c2e19" value="1" type="radio">
             <label for="c2e191" class="experience1">Haven't done</label>
@@ -1197,14 +1136,10 @@
             <input id="c2a196" name="c2a19" value="6" type="radio">
             <label for="c2a196" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Swallowing own come
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e20" class="experience radio_slider">
             <input id="c1e201" name="c1e20" value="1" type="radio">
             <label for="c1e201" class="experience1">Haven't done</label>
@@ -1229,8 +1164,9 @@
             <input id="c1a206" name="c1a20" value="6" type="radio">
             <label for="c1a206" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Swallowing own come</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e20" class="experience radio_slider">
             <input id="c2e201" name="c2e20" value="1" type="radio">
             <label for="c2e201" class="experience1">Haven't done</label>
@@ -1255,14 +1191,10 @@
             <input id="c2a206" name="c2a20" value="6" type="radio">
             <label for="c2a206" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Swallowing others’ come
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e21" class="experience radio_slider">
             <input id="c1e211" name="c1e21" value="1" type="radio">
             <label for="c1e211" class="experience1">Haven't done</label>
@@ -1287,8 +1219,9 @@
             <input id="c1a216" name="c1a21" value="6" type="radio">
             <label for="c1a216" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Swallowing others’ come</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e21" class="experience radio_slider">
             <input id="c2e211" name="c2e21" value="1" type="radio">
             <label for="c2e211" class="experience1">Haven't done</label>
@@ -1313,14 +1246,10 @@
             <input id="c2a216" name="c2a21" value="6" type="radio">
             <label for="c2a216" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Tickling
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e22" class="experience radio_slider">
             <input id="c1e221" name="c1e22" value="1" type="radio">
             <label for="c1e221" class="experience1">Haven't done</label>
@@ -1345,8 +1274,9 @@
             <input id="c1a226" name="c1a22" value="6" type="radio">
             <label for="c1a226" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Tickling</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e22" class="experience radio_slider">
             <input id="c2e221" name="c2e22" value="1" type="radio">
             <label for="c2e221" class="experience1">Haven't done</label>
@@ -1371,14 +1301,10 @@
             <input id="c2a226" name="c2a22" value="6" type="radio">
             <label for="c2a226" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Armpit worship
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e23" class="experience radio_slider">
             <input id="c1e231" name="c1e23" value="1" type="radio">
             <label for="c1e231" class="experience1">Haven't done</label>
@@ -1403,8 +1329,9 @@
             <input id="c1a236" name="c1a23" value="6" type="radio">
             <label for="c1a236" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Armpit worship</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e23" class="experience radio_slider">
             <input id="c2e231" name="c2e23" value="1" type="radio">
             <label for="c2e231" class="experience1">Haven't done</label>
@@ -1429,14 +1356,10 @@
             <input id="c2a236" name="c2a23" value="6" type="radio">
             <label for="c2a236" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Foot worship
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e24" class="experience radio_slider">
             <input id="c1e241" name="c1e24" value="1" type="radio">
             <label for="c1e241" class="experience1">Haven't done</label>
@@ -1461,8 +1384,9 @@
             <input id="c1a246" name="c1a24" value="6" type="radio">
             <label for="c1a246" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Foot worship</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e24" class="experience radio_slider">
             <input id="c2e241" name="c2e24" value="1" type="radio">
             <label for="c2e241" class="experience1">Haven't done</label>
@@ -1487,14 +1411,10 @@
             <input id="c2a246" name="c2a24" value="6" type="radio">
             <label for="c2a246" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Shaving
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e25" class="experience radio_slider">
             <input id="c1e251" name="c1e25" value="1" type="radio">
             <label for="c1e251" class="experience1">Haven't done</label>
@@ -1519,8 +1439,9 @@
             <input id="c1a256" name="c1a25" value="6" type="radio">
             <label for="c1a256" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Shaving</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e25" class="experience radio_slider">
             <input id="c2e251" name="c2e25" value="1" type="radio">
             <label for="c2e251" class="experience1">Haven't done</label>
@@ -1545,14 +1466,10 @@
             <input id="c2a256" name="c2a25" value="6" type="radio">
             <label for="c2a256" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Cross dressing
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e26" class="experience radio_slider">
             <input id="c1e261" name="c1e26" value="1" type="radio">
             <label for="c1e261" class="experience1">Haven't done</label>
@@ -1577,8 +1494,9 @@
             <input id="c1a266" name="c1a26" value="6" type="radio">
             <label for="c1a266" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Cross dressing</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e26" class="experience radio_slider">
             <input id="c2e261" name="c2e26" value="1" type="radio">
             <label for="c2e261" class="experience1">Haven't done</label>
@@ -1603,14 +1521,10 @@
             <input id="c2a266" name="c2a26" value="6" type="radio">
             <label for="c2a266" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Wrestling
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e27" class="experience radio_slider">
             <input id="c1e271" name="c1e27" value="1" type="radio">
             <label for="c1e271" class="experience1">Haven't done</label>
@@ -1635,8 +1549,9 @@
             <input id="c1a276" name="c1a27" value="6" type="radio">
             <label for="c1a276" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Wrestling</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e27" class="experience radio_slider">
             <input id="c2e271" name="c2e27" value="1" type="radio">
             <label for="c2e271" class="experience1">Haven't done</label>
@@ -1661,14 +1576,10 @@
             <input id="c2a276" name="c2a27" value="6" type="radio">
             <label for="c2a276" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Hypnosis
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e28" class="experience radio_slider">
             <input id="c1e281" name="c1e28" value="1" type="radio">
             <label for="c1e281" class="experience1">Haven't done</label>
@@ -1693,8 +1604,9 @@
             <input id="c1a286" name="c1a28" value="6" type="radio">
             <label for="c1a286" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Hypnosis</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e28" class="experience radio_slider">
             <input id="c2e281" name="c2e28" value="1" type="radio">
             <label for="c2e281" class="experience1">Haven't done</label>
@@ -1719,14 +1631,10 @@
             <input id="c2a286" name="c2a28" value="6" type="radio">
             <label for="c2a286" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Bathroom control
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e29" class="experience radio_slider">
             <input id="c1e291" name="c1e29" value="1" type="radio">
             <label for="c1e291" class="experience1">Haven't done</label>
@@ -1751,8 +1659,9 @@
             <input id="c1a296" name="c1a29" value="6" type="radio">
             <label for="c1a296" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Bathroom control</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e29" class="experience radio_slider">
             <input id="c2e291" name="c2e29" value="1" type="radio">
             <label for="c2e291" class="experience1">Haven't done</label>
@@ -1777,14 +1686,10 @@
             <input id="c2a296" name="c2a29" value="6" type="radio">
             <label for="c2a296" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Piss play
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e30" class="experience radio_slider">
             <input id="c1e301" name="c1e30" value="1" type="radio">
             <label for="c1e301" class="experience1">Haven't done</label>
@@ -1809,8 +1714,9 @@
             <input id="c1a306" name="c1a30" value="6" type="radio">
             <label for="c1a306" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Piss play</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e30" class="experience radio_slider">
             <input id="c2e301" name="c2e30" value="1" type="radio">
             <label for="c2e301" class="experience1">Haven't done</label>
@@ -1835,14 +1741,10 @@
             <input id="c2a306" name="c2a30" value="6" type="radio">
             <label for="c2a306" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Scat
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e31" class="experience radio_slider">
             <input id="c1e311" name="c1e31" value="1" type="radio">
             <label for="c1e311" class="experience1">Haven't done</label>
@@ -1867,8 +1769,9 @@
             <input id="c1a316" name="c1a31" value="6" type="radio">
             <label for="c1a316" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Scat</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e31" class="experience radio_slider">
             <input id="c2e311" name="c2e31" value="1" type="radio">
             <label for="c2e311" class="experience1">Haven't done</label>
@@ -1893,14 +1796,10 @@
             <input id="c2a316" name="c2a31" value="6" type="radio">
             <label for="c2a316" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          24/7
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e32" class="experience radio_slider">
             <input id="c1e321" name="c1e32" value="1" type="radio">
             <label for="c1e321" class="experience1">Haven't done</label>
@@ -1925,8 +1824,9 @@
             <input id="c1a326" name="c1a32" value="6" type="radio">
             <label for="c1a326" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">24/7</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e32" class="experience radio_slider">
             <input id="c2e321" name="c2e32" value="1" type="radio">
             <label for="c2e321" class="experience1">Haven't done</label>
@@ -1951,14 +1851,10 @@
             <input id="c2a326" name="c2a32" value="6" type="radio">
             <label for="c2a326" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Contracts
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e33" class="experience radio_slider">
             <input id="c1e331" name="c1e33" value="1" type="radio">
             <label for="c1e331" class="experience1">Haven't done</label>
@@ -1983,8 +1879,9 @@
             <input id="c1a336" name="c1a33" value="6" type="radio">
             <label for="c1a336" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Contracts</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e33" class="experience radio_slider">
             <input id="c2e331" name="c2e33" value="1" type="radio">
             <label for="c2e331" class="experience1">Haven't done</label>
@@ -2009,14 +1906,10 @@
             <input id="c2a336" name="c2a33" value="6" type="radio">
             <label for="c2a336" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Voyeurism
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e34" class="experience radio_slider">
             <input id="c1e341" name="c1e34" value="1" type="radio">
             <label for="c1e341" class="experience1">Haven't done</label>
@@ -2041,8 +1934,9 @@
             <input id="c1a346" name="c1a34" value="6" type="radio">
             <label for="c1a346" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Voyeurism</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e34" class="experience radio_slider">
             <input id="c2e341" name="c2e34" value="1" type="radio">
             <label for="c2e341" class="experience1">Haven't done</label>
@@ -2067,14 +1961,10 @@
             <input id="c2a346" name="c2a34" value="6" type="radio">
             <label for="c2a346" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Exhibitionism
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e35" class="experience radio_slider">
             <input id="c1e351" name="c1e35" value="1" type="radio">
             <label for="c1e351" class="experience1">Haven't done</label>
@@ -2099,8 +1989,9 @@
             <input id="c1a356" name="c1a35" value="6" type="radio">
             <label for="c1a356" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Exhibitionism</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e35" class="experience radio_slider">
             <input id="c2e351" name="c2e35" value="1" type="radio">
             <label for="c2e351" class="experience1">Haven't done</label>
@@ -2125,18 +2016,11 @@
             <input id="c2a356" name="c2a35" value="6" type="radio">
             <label for="c2a356" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-    <tbody class="topic_group">
-      <tr class="topic">
-      <td colspan="2">S & M</td>
-      </tr>
-      <tr class="activity">
-        <td colspan="2">
-          Corporal punishment
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="topic">S & M</div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e36" class="experience radio_slider">
             <input id="c1e361" name="c1e36" value="1" type="radio">
             <label for="c1e361" class="experience1">Haven't done</label>
@@ -2161,8 +2045,9 @@
             <input id="c1a366" name="c1a36" value="6" type="radio">
             <label for="c1a366" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Corporal punishment</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e36" class="experience radio_slider">
             <input id="c2e361" name="c2e36" value="1" type="radio">
             <label for="c2e361" class="experience1">Haven't done</label>
@@ -2187,14 +2072,10 @@
             <input id="c2a366" name="c2a36" value="6" type="radio">
             <label for="c2a366" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Light pain
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e37" class="experience radio_slider">
             <input id="c1e371" name="c1e37" value="1" type="radio">
             <label for="c1e371" class="experience1">Haven't done</label>
@@ -2219,8 +2100,9 @@
             <input id="c1a376" name="c1a37" value="6" type="radio">
             <label for="c1a376" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Light pain</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e37" class="experience radio_slider">
             <input id="c2e371" name="c2e37" value="1" type="radio">
             <label for="c2e371" class="experience1">Haven't done</label>
@@ -2245,14 +2127,10 @@
             <input id="c2a376" name="c2a37" value="6" type="radio">
             <label for="c2a376" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Heavy pain
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e38" class="experience radio_slider">
             <input id="c1e381" name="c1e38" value="1" type="radio">
             <label for="c1e381" class="experience1">Haven't done</label>
@@ -2277,8 +2155,9 @@
             <input id="c1a386" name="c1a38" value="6" type="radio">
             <label for="c1a386" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Heavy pain</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e38" class="experience radio_slider">
             <input id="c2e381" name="c2e38" value="1" type="radio">
             <label for="c2e381" class="experience1">Haven't done</label>
@@ -2303,14 +2182,10 @@
             <input id="c2a386" name="c2a38" value="6" type="radio">
             <label for="c2a386" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Face slapping
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e39" class="experience radio_slider">
             <input id="c1e391" name="c1e39" value="1" type="radio">
             <label for="c1e391" class="experience1">Haven't done</label>
@@ -2335,8 +2210,9 @@
             <input id="c1a396" name="c1a39" value="6" type="radio">
             <label for="c1a396" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Face slapping</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e39" class="experience radio_slider">
             <input id="c2e391" name="c2e39" value="1" type="radio">
             <label for="c2e391" class="experience1">Haven't done</label>
@@ -2361,14 +2237,10 @@
             <input id="c2a396" name="c2a39" value="6" type="radio">
             <label for="c2a396" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Spanking
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e40" class="experience radio_slider">
             <input id="c1e401" name="c1e40" value="1" type="radio">
             <label for="c1e401" class="experience1">Haven't done</label>
@@ -2393,8 +2265,9 @@
             <input id="c1a406" name="c1a40" value="6" type="radio">
             <label for="c1a406" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Spanking</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e40" class="experience radio_slider">
             <input id="c2e401" name="c2e40" value="1" type="radio">
             <label for="c2e401" class="experience1">Haven't done</label>
@@ -2419,14 +2292,10 @@
             <input id="c2a406" name="c2a40" value="6" type="radio">
             <label for="c2a406" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Nipple play
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e41" class="experience radio_slider">
             <input id="c1e411" name="c1e41" value="1" type="radio">
             <label for="c1e411" class="experience1">Haven't done</label>
@@ -2451,8 +2320,9 @@
             <input id="c1a416" name="c1a41" value="6" type="radio">
             <label for="c1a416" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Nipple play</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e41" class="experience radio_slider">
             <input id="c2e411" name="c2e41" value="1" type="radio">
             <label for="c2e411" class="experience1">Haven't done</label>
@@ -2477,14 +2347,10 @@
             <input id="c2a416" name="c2a41" value="6" type="radio">
             <label for="c2a416" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Nipple clamps
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e42" class="experience radio_slider">
             <input id="c1e421" name="c1e42" value="1" type="radio">
             <label for="c1e421" class="experience1">Haven't done</label>
@@ -2509,8 +2375,9 @@
             <input id="c1a426" name="c1a42" value="6" type="radio">
             <label for="c1a426" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Nipple clamps</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e42" class="experience radio_slider">
             <input id="c2e421" name="c2e42" value="1" type="radio">
             <label for="c2e421" class="experience1">Haven't done</label>
@@ -2535,14 +2402,10 @@
             <input id="c2a426" name="c2a42" value="6" type="radio">
             <label for="c2a426" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Clothespins
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e43" class="experience radio_slider">
             <input id="c1e431" name="c1e43" value="1" type="radio">
             <label for="c1e431" class="experience1">Haven't done</label>
@@ -2567,8 +2430,9 @@
             <input id="c1a436" name="c1a43" value="6" type="radio">
             <label for="c1a436" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Clothespins</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e43" class="experience radio_slider">
             <input id="c2e431" name="c2e43" value="1" type="radio">
             <label for="c2e431" class="experience1">Haven't done</label>
@@ -2593,14 +2457,10 @@
             <input id="c2a436" name="c2a43" value="6" type="radio">
             <label for="c2a436" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Caning
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e44" class="experience radio_slider">
             <input id="c1e441" name="c1e44" value="1" type="radio">
             <label for="c1e441" class="experience1">Haven't done</label>
@@ -2625,8 +2485,9 @@
             <input id="c1a446" name="c1a44" value="6" type="radio">
             <label for="c1a446" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Caning</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e44" class="experience radio_slider">
             <input id="c2e441" name="c2e44" value="1" type="radio">
             <label for="c2e441" class="experience1">Haven't done</label>
@@ -2651,14 +2512,10 @@
             <input id="c2a446" name="c2a44" value="6" type="radio">
             <label for="c2a446" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Flogging
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e45" class="experience radio_slider">
             <input id="c1e451" name="c1e45" value="1" type="radio">
             <label for="c1e451" class="experience1">Haven't done</label>
@@ -2683,8 +2540,9 @@
             <input id="c1a456" name="c1a45" value="6" type="radio">
             <label for="c1a456" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Flogging</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e45" class="experience radio_slider">
             <input id="c2e451" name="c2e45" value="1" type="radio">
             <label for="c2e451" class="experience1">Haven't done</label>
@@ -2709,14 +2567,10 @@
             <input id="c2a456" name="c2a45" value="6" type="radio">
             <label for="c2a456" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          E-stim
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e46" class="experience radio_slider">
             <input id="c1e461" name="c1e46" value="1" type="radio">
             <label for="c1e461" class="experience1">Haven't done</label>
@@ -2741,8 +2595,9 @@
             <input id="c1a466" name="c1a46" value="6" type="radio">
             <label for="c1a466" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">E-stim</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e46" class="experience radio_slider">
             <input id="c2e461" name="c2e46" value="1" type="radio">
             <label for="c2e461" class="experience1">Haven't done</label>
@@ -2767,14 +2622,10 @@
             <input id="c2a466" name="c2a46" value="6" type="radio">
             <label for="c2a466" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Hot wax
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e47" class="experience radio_slider">
             <input id="c1e471" name="c1e47" value="1" type="radio">
             <label for="c1e471" class="experience1">Haven't done</label>
@@ -2799,8 +2650,9 @@
             <input id="c1a476" name="c1a47" value="6" type="radio">
             <label for="c1a476" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Hot wax</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e47" class="experience radio_slider">
             <input id="c2e471" name="c2e47" value="1" type="radio">
             <label for="c2e471" class="experience1">Haven't done</label>
@@ -2825,14 +2677,10 @@
             <input id="c2a476" name="c2a47" value="6" type="radio">
             <label for="c2a476" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Hair pulling
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e48" class="experience radio_slider">
             <input id="c1e481" name="c1e48" value="1" type="radio">
             <label for="c1e481" class="experience1">Haven't done</label>
@@ -2857,8 +2705,9 @@
             <input id="c1a486" name="c1a48" value="6" type="radio">
             <label for="c1a486" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Hair pulling</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e48" class="experience radio_slider">
             <input id="c2e481" name="c2e48" value="1" type="radio">
             <label for="c2e481" class="experience1">Haven't done</label>
@@ -2883,14 +2732,10 @@
             <input id="c2a486" name="c2a48" value="6" type="radio">
             <label for="c2a486" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          CBT
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e49" class="experience radio_slider">
             <input id="c1e491" name="c1e49" value="1" type="radio">
             <label for="c1e491" class="experience1">Haven't done</label>
@@ -2915,8 +2760,9 @@
             <input id="c1a496" name="c1a49" value="6" type="radio">
             <label for="c1a496" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">CBT</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e49" class="experience radio_slider">
             <input id="c2e491" name="c2e49" value="1" type="radio">
             <label for="c2e491" class="experience1">Haven't done</label>
@@ -2941,14 +2787,10 @@
             <input id="c2a496" name="c2a49" value="6" type="radio">
             <label for="c2a496" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Ball stretching
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e50" class="experience radio_slider">
             <input id="c1e501" name="c1e50" value="1" type="radio">
             <label for="c1e501" class="experience1">Haven't done</label>
@@ -2973,8 +2815,9 @@
             <input id="c1a506" name="c1a50" value="6" type="radio">
             <label for="c1a506" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Ball stretching</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e50" class="experience radio_slider">
             <input id="c2e501" name="c2e50" value="1" type="radio">
             <label for="c2e501" class="experience1">Haven't done</label>
@@ -2999,14 +2842,10 @@
             <input id="c2a506" name="c2a50" value="6" type="radio">
             <label for="c2a506" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Breath play
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e51" class="experience radio_slider">
             <input id="c1e511" name="c1e51" value="1" type="radio">
             <label for="c1e511" class="experience1">Haven't done</label>
@@ -3031,8 +2870,9 @@
             <input id="c1a516" name="c1a51" value="6" type="radio">
             <label for="c1a516" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Breath play</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e51" class="experience radio_slider">
             <input id="c2e511" name="c2e51" value="1" type="radio">
             <label for="c2e511" class="experience1">Haven't done</label>
@@ -3057,18 +2897,11 @@
             <input id="c2a516" name="c2a51" value="6" type="radio">
             <label for="c2a516" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-    <tbody class="topic_group">
-      <tr class="topic">
-      <td colspan="2">Role play / scenes</td>
-      </tr>
-      <tr class="activity">
-        <td colspan="2">
-          Public
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="topic">Role play / scenes</div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e52" class="experience radio_slider">
             <input id="c1e521" name="c1e52" value="1" type="radio">
             <label for="c1e521" class="experience1">Haven't done</label>
@@ -3093,8 +2926,9 @@
             <input id="c1a526" name="c1a52" value="6" type="radio">
             <label for="c1a526" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Public</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e52" class="experience radio_slider">
             <input id="c2e521" name="c2e52" value="1" type="radio">
             <label for="c2e521" class="experience1">Haven't done</label>
@@ -3119,14 +2953,10 @@
             <input id="c2a526" name="c2a52" value="6" type="radio">
             <label for="c2a526" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Medical play
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e53" class="experience radio_slider">
             <input id="c1e531" name="c1e53" value="1" type="radio">
             <label for="c1e531" class="experience1">Haven't done</label>
@@ -3151,8 +2981,9 @@
             <input id="c1a536" name="c1a53" value="6" type="radio">
             <label for="c1a536" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Medical play</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e53" class="experience radio_slider">
             <input id="c2e531" name="c2e53" value="1" type="radio">
             <label for="c2e531" class="experience1">Haven't done</label>
@@ -3177,14 +3008,10 @@
             <input id="c2a536" name="c2a53" value="6" type="radio">
             <label for="c2a536" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Pet play
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e54" class="experience radio_slider">
             <input id="c1e541" name="c1e54" value="1" type="radio">
             <label for="c1e541" class="experience1">Haven't done</label>
@@ -3209,8 +3036,9 @@
             <input id="c1a546" name="c1a54" value="6" type="radio">
             <label for="c1a546" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Pet play</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e54" class="experience radio_slider">
             <input id="c2e541" name="c2e54" value="1" type="radio">
             <label for="c2e541" class="experience1">Haven't done</label>
@@ -3235,14 +3063,10 @@
             <input id="c2a546" name="c2a54" value="6" type="radio">
             <label for="c2a546" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Age play
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e55" class="experience radio_slider">
             <input id="c1e551" name="c1e55" value="1" type="radio">
             <label for="c1e551" class="experience1">Haven't done</label>
@@ -3267,8 +3091,9 @@
             <input id="c1a556" name="c1a55" value="6" type="radio">
             <label for="c1a556" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Age play</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e55" class="experience radio_slider">
             <input id="c2e551" name="c2e55" value="1" type="radio">
             <label for="c2e551" class="experience1">Haven't done</label>
@@ -3293,14 +3118,10 @@
             <input id="c2a556" name="c2a55" value="6" type="radio">
             <label for="c2a556" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Fantasy rape
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e56" class="experience radio_slider">
             <input id="c1e561" name="c1e56" value="1" type="radio">
             <label for="c1e561" class="experience1">Haven't done</label>
@@ -3325,8 +3146,9 @@
             <input id="c1a566" name="c1a56" value="6" type="radio">
             <label for="c1a566" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Fantasy rape</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e56" class="experience radio_slider">
             <input id="c2e561" name="c2e56" value="1" type="radio">
             <label for="c2e561" class="experience1">Haven't done</label>
@@ -3351,14 +3173,10 @@
             <input id="c2a566" name="c2a56" value="6" type="radio">
             <label for="c2a566" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Rituals
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e57" class="experience radio_slider">
             <input id="c1e571" name="c1e57" value="1" type="radio">
             <label for="c1e571" class="experience1">Haven't done</label>
@@ -3383,8 +3201,9 @@
             <input id="c1a576" name="c1a57" value="6" type="radio">
             <label for="c1a576" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Rituals</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e57" class="experience radio_slider">
             <input id="c2e571" name="c2e57" value="1" type="radio">
             <label for="c2e571" class="experience1">Haven't done</label>
@@ -3409,14 +3228,10 @@
             <input id="c2a576" name="c2a57" value="6" type="radio">
             <label for="c2a576" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Interrogation
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e58" class="experience radio_slider">
             <input id="c1e581" name="c1e58" value="1" type="radio">
             <label for="c1e581" class="experience1">Haven't done</label>
@@ -3441,8 +3256,9 @@
             <input id="c1a586" name="c1a58" value="6" type="radio">
             <label for="c1a586" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Interrogation</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e58" class="experience radio_slider">
             <input id="c2e581" name="c2e58" value="1" type="radio">
             <label for="c2e581" class="experience1">Haven't done</label>
@@ -3467,14 +3283,10 @@
             <input id="c2a586" name="c2a58" value="6" type="radio">
             <label for="c2a586" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Kidnapping
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e59" class="experience radio_slider">
             <input id="c1e591" name="c1e59" value="1" type="radio">
             <label for="c1e591" class="experience1">Haven't done</label>
@@ -3499,8 +3311,9 @@
             <input id="c1a596" name="c1a59" value="6" type="radio">
             <label for="c1a596" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Kidnapping</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e59" class="experience radio_slider">
             <input id="c2e591" name="c2e59" value="1" type="radio">
             <label for="c2e591" class="experience1">Haven't done</label>
@@ -3525,14 +3338,10 @@
             <input id="c2a596" name="c2a59" value="6" type="radio">
             <label for="c2a596" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Recording video or photography
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e60" class="experience radio_slider">
             <input id="c1e601" name="c1e60" value="1" type="radio">
             <label for="c1e601" class="experience1">Haven't done</label>
@@ -3557,8 +3366,9 @@
             <input id="c1a606" name="c1a60" value="6" type="radio">
             <label for="c1a606" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Recording video or photography</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e60" class="experience radio_slider">
             <input id="c2e601" name="c2e60" value="1" type="radio">
             <label for="c2e601" class="experience1">Haven't done</label>
@@ -3583,18 +3393,11 @@
             <input id="c2a606" name="c2a60" value="6" type="radio">
             <label for="c2a606" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-    <tbody class="topic_group">
-      <tr class="topic">
-      <td colspan="2">Sexual</td>
-      </tr>
-      <tr class="activity">
-        <td colspan="2">
-          Kissing
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="topic">Sexual</div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e61" class="experience radio_slider">
             <input id="c1e611" name="c1e61" value="1" type="radio">
             <label for="c1e611" class="experience1">Haven't done</label>
@@ -3619,8 +3422,9 @@
             <input id="c1a616" name="c1a61" value="6" type="radio">
             <label for="c1a616" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Kissing</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e61" class="experience radio_slider">
             <input id="c2e611" name="c2e61" value="1" type="radio">
             <label for="c2e611" class="experience1">Haven't done</label>
@@ -3645,14 +3449,10 @@
             <input id="c2a616" name="c2a61" value="6" type="radio">
             <label for="c2a616" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Cuddling
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e62" class="experience radio_slider">
             <input id="c1e621" name="c1e62" value="1" type="radio">
             <label for="c1e621" class="experience1">Haven't done</label>
@@ -3677,8 +3477,9 @@
             <input id="c1a626" name="c1a62" value="6" type="radio">
             <label for="c1a626" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Cuddling</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e62" class="experience radio_slider">
             <input id="c2e621" name="c2e62" value="1" type="radio">
             <label for="c2e621" class="experience1">Haven't done</label>
@@ -3703,14 +3504,10 @@
             <input id="c2a626" name="c2a62" value="6" type="radio">
             <label for="c2a626" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Blow job (giving)
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e63" class="experience radio_slider">
             <input id="c1e631" name="c1e63" value="1" type="radio">
             <label for="c1e631" class="experience1">Haven't done</label>
@@ -3735,8 +3532,9 @@
             <input id="c1a636" name="c1a63" value="6" type="radio">
             <label for="c1a636" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Blow job (giving)</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e63" class="experience radio_slider">
             <input id="c2e631" name="c2e63" value="1" type="radio">
             <label for="c2e631" class="experience1">Haven't done</label>
@@ -3761,14 +3559,10 @@
             <input id="c2a636" name="c2a63" value="6" type="radio">
             <label for="c2a636" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Blow job (receiving)
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e64" class="experience radio_slider">
             <input id="c1e641" name="c1e64" value="1" type="radio">
             <label for="c1e641" class="experience1">Haven't done</label>
@@ -3793,8 +3587,9 @@
             <input id="c1a646" name="c1a64" value="6" type="radio">
             <label for="c1a646" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Blow job (receiving)</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e64" class="experience radio_slider">
             <input id="c2e641" name="c2e64" value="1" type="radio">
             <label for="c2e641" class="experience1">Haven't done</label>
@@ -3819,14 +3614,10 @@
             <input id="c2a646" name="c2a64" value="6" type="radio">
             <label for="c2a646" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Cunnilingus (giving)
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e65" class="experience radio_slider">
             <input id="c1e651" name="c1e65" value="1" type="radio">
             <label for="c1e651" class="experience1">Haven't done</label>
@@ -3851,8 +3642,9 @@
             <input id="c1a656" name="c1a65" value="6" type="radio">
             <label for="c1a656" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Cunnilingus (giving)</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e65" class="experience radio_slider">
             <input id="c2e651" name="c2e65" value="1" type="radio">
             <label for="c2e651" class="experience1">Haven't done</label>
@@ -3877,14 +3669,10 @@
             <input id="c2a656" name="c2a65" value="6" type="radio">
             <label for="c2a656" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Cunnilingus (receiving)
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e66" class="experience radio_slider">
             <input id="c1e661" name="c1e66" value="1" type="radio">
             <label for="c1e661" class="experience1">Haven't done</label>
@@ -3909,8 +3697,9 @@
             <input id="c1a666" name="c1a66" value="6" type="radio">
             <label for="c1a666" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Cunnilingus (receiving)</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e66" class="experience radio_slider">
             <input id="c2e661" name="c2e66" value="1" type="radio">
             <label for="c2e661" class="experience1">Haven't done</label>
@@ -3935,14 +3724,10 @@
             <input id="c2a666" name="c2a66" value="6" type="radio">
             <label for="c2a666" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Rimming (giving)
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e67" class="experience radio_slider">
             <input id="c1e671" name="c1e67" value="1" type="radio">
             <label for="c1e671" class="experience1">Haven't done</label>
@@ -3967,8 +3752,9 @@
             <input id="c1a676" name="c1a67" value="6" type="radio">
             <label for="c1a676" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Rimming (giving)</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e67" class="experience radio_slider">
             <input id="c2e671" name="c2e67" value="1" type="radio">
             <label for="c2e671" class="experience1">Haven't done</label>
@@ -3993,14 +3779,10 @@
             <input id="c2a676" name="c2a67" value="6" type="radio">
             <label for="c2a676" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Rimming (receiving)
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e68" class="experience radio_slider">
             <input id="c1e681" name="c1e68" value="1" type="radio">
             <label for="c1e681" class="experience1">Haven't done</label>
@@ -4025,8 +3807,9 @@
             <input id="c1a686" name="c1a68" value="6" type="radio">
             <label for="c1a686" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Rimming (receiving)</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e68" class="experience radio_slider">
             <input id="c2e681" name="c2e68" value="1" type="radio">
             <label for="c2e681" class="experience1">Haven't done</label>
@@ -4051,14 +3834,10 @@
             <input id="c2a686" name="c2a68" value="6" type="radio">
             <label for="c2a686" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Butt plug
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e69" class="experience radio_slider">
             <input id="c1e691" name="c1e69" value="1" type="radio">
             <label for="c1e691" class="experience1">Haven't done</label>
@@ -4083,8 +3862,9 @@
             <input id="c1a696" name="c1a69" value="6" type="radio">
             <label for="c1a696" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Butt plug</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e69" class="experience radio_slider">
             <input id="c2e691" name="c2e69" value="1" type="radio">
             <label for="c2e691" class="experience1">Haven't done</label>
@@ -4109,14 +3889,10 @@
             <input id="c2a696" name="c2a69" value="6" type="radio">
             <label for="c2a696" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Anal sex (top)
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e70" class="experience radio_slider">
             <input id="c1e701" name="c1e70" value="1" type="radio">
             <label for="c1e701" class="experience1">Haven't done</label>
@@ -4141,8 +3917,9 @@
             <input id="c1a706" name="c1a70" value="6" type="radio">
             <label for="c1a706" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Anal sex (top)</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e70" class="experience radio_slider">
             <input id="c2e701" name="c2e70" value="1" type="radio">
             <label for="c2e701" class="experience1">Haven't done</label>
@@ -4167,14 +3944,10 @@
             <input id="c2a706" name="c2a70" value="6" type="radio">
             <label for="c2a706" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Anal sex (bottom)
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e71" class="experience radio_slider">
             <input id="c1e711" name="c1e71" value="1" type="radio">
             <label for="c1e711" class="experience1">Haven't done</label>
@@ -4199,8 +3972,9 @@
             <input id="c1a716" name="c1a71" value="6" type="radio">
             <label for="c1a716" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Anal sex (bottom)</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e71" class="experience radio_slider">
             <input id="c2e711" name="c2e71" value="1" type="radio">
             <label for="c2e711" class="experience1">Haven't done</label>
@@ -4225,14 +3999,10 @@
             <input id="c2a716" name="c2a71" value="6" type="radio">
             <label for="c2a716" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Pegging (top)
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e72" class="experience radio_slider">
             <input id="c1e721" name="c1e72" value="1" type="radio">
             <label for="c1e721" class="experience1">Haven't done</label>
@@ -4257,8 +4027,9 @@
             <input id="c1a726" name="c1a72" value="6" type="radio">
             <label for="c1a726" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Pegging (top)</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e72" class="experience radio_slider">
             <input id="c2e721" name="c2e72" value="1" type="radio">
             <label for="c2e721" class="experience1">Haven't done</label>
@@ -4283,14 +4054,10 @@
             <input id="c2a726" name="c2a72" value="6" type="radio">
             <label for="c2a726" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Pegging (bottom)
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e73" class="experience radio_slider">
             <input id="c1e731" name="c1e73" value="1" type="radio">
             <label for="c1e731" class="experience1">Haven't done</label>
@@ -4315,8 +4082,9 @@
             <input id="c1a736" name="c1a73" value="6" type="radio">
             <label for="c1a736" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Pegging (bottom)</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e73" class="experience radio_slider">
             <input id="c2e731" name="c2e73" value="1" type="radio">
             <label for="c2e731" class="experience1">Haven't done</label>
@@ -4341,14 +4109,10 @@
             <input id="c2a736" name="c2a73" value="6" type="radio">
             <label for="c2a736" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Vaginal sex (giving)
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e74" class="experience radio_slider">
             <input id="c1e741" name="c1e74" value="1" type="radio">
             <label for="c1e741" class="experience1">Haven't done</label>
@@ -4373,8 +4137,9 @@
             <input id="c1a746" name="c1a74" value="6" type="radio">
             <label for="c1a746" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Vaginal sex (giving)</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e74" class="experience radio_slider">
             <input id="c2e741" name="c2e74" value="1" type="radio">
             <label for="c2e741" class="experience1">Haven't done</label>
@@ -4399,14 +4164,10 @@
             <input id="c2a746" name="c2a74" value="6" type="radio">
             <label for="c2a746" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Vaginal sex (receiving)
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e75" class="experience radio_slider">
             <input id="c1e751" name="c1e75" value="1" type="radio">
             <label for="c1e751" class="experience1">Haven't done</label>
@@ -4431,8 +4192,9 @@
             <input id="c1a756" name="c1a75" value="6" type="radio">
             <label for="c1a756" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Vaginal sex (receiving)</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e75" class="experience radio_slider">
             <input id="c2e751" name="c2e75" value="1" type="radio">
             <label for="c2e751" class="experience1">Haven't done</label>
@@ -4457,14 +4219,10 @@
             <input id="c2a756" name="c2a75" value="6" type="radio">
             <label for="c2a756" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Dildos
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e76" class="experience radio_slider">
             <input id="c1e761" name="c1e76" value="1" type="radio">
             <label for="c1e761" class="experience1">Haven't done</label>
@@ -4489,8 +4247,9 @@
             <input id="c1a766" name="c1a76" value="6" type="radio">
             <label for="c1a766" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Dildos</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e76" class="experience radio_slider">
             <input id="c2e761" name="c2e76" value="1" type="radio">
             <label for="c2e761" class="experience1">Haven't done</label>
@@ -4515,14 +4274,10 @@
             <input id="c2a766" name="c2a76" value="6" type="radio">
             <label for="c2a766" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Vibrators
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e77" class="experience radio_slider">
             <input id="c1e771" name="c1e77" value="1" type="radio">
             <label for="c1e771" class="experience1">Haven't done</label>
@@ -4547,8 +4302,9 @@
             <input id="c1a776" name="c1a77" value="6" type="radio">
             <label for="c1a776" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Vibrators</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e77" class="experience radio_slider">
             <input id="c2e771" name="c2e77" value="1" type="radio">
             <label for="c2e771" class="experience1">Haven't done</label>
@@ -4573,14 +4329,10 @@
             <input id="c2a776" name="c2a77" value="6" type="radio">
             <label for="c2a776" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Fingering
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e78" class="experience radio_slider">
             <input id="c1e781" name="c1e78" value="1" type="radio">
             <label for="c1e781" class="experience1">Haven't done</label>
@@ -4605,8 +4357,9 @@
             <input id="c1a786" name="c1a78" value="6" type="radio">
             <label for="c1a786" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Fingering</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e78" class="experience radio_slider">
             <input id="c2e781" name="c2e78" value="1" type="radio">
             <label for="c2e781" class="experience1">Haven't done</label>
@@ -4631,14 +4384,10 @@
             <input id="c2a786" name="c2a78" value="6" type="radio">
             <label for="c2a786" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Fisting
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e79" class="experience radio_slider">
             <input id="c1e791" name="c1e79" value="1" type="radio">
             <label for="c1e791" class="experience1">Haven't done</label>
@@ -4663,8 +4412,9 @@
             <input id="c1a796" name="c1a79" value="6" type="radio">
             <label for="c1a796" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Fisting</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e79" class="experience radio_slider">
             <input id="c2e791" name="c2e79" value="1" type="radio">
             <label for="c2e791" class="experience1">Haven't done</label>
@@ -4689,14 +4439,10 @@
             <input id="c2a796" name="c2a79" value="6" type="radio">
             <label for="c2a796" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Anal orgasms
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e80" class="experience radio_slider">
             <input id="c1e801" name="c1e80" value="1" type="radio">
             <label for="c1e801" class="experience1">Haven't done</label>
@@ -4721,8 +4467,9 @@
             <input id="c1a806" name="c1a80" value="6" type="radio">
             <label for="c1a806" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Anal orgasms</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e80" class="experience radio_slider">
             <input id="c2e801" name="c2e80" value="1" type="radio">
             <label for="c2e801" class="experience1">Haven't done</label>
@@ -4747,14 +4494,10 @@
             <input id="c2a806" name="c2a80" value="6" type="radio">
             <label for="c2a806" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Prostage milking
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e81" class="experience radio_slider">
             <input id="c1e811" name="c1e81" value="1" type="radio">
             <label for="c1e811" class="experience1">Haven't done</label>
@@ -4779,8 +4522,9 @@
             <input id="c1a816" name="c1a81" value="6" type="radio">
             <label for="c1a816" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Prostage milking</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e81" class="experience radio_slider">
             <input id="c2e811" name="c2e81" value="1" type="radio">
             <label for="c2e811" class="experience1">Haven't done</label>
@@ -4805,14 +4549,10 @@
             <input id="c2a816" name="c2a81" value="6" type="radio">
             <label for="c2a816" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Orgasm control / denial
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e82" class="experience radio_slider">
             <input id="c1e821" name="c1e82" value="1" type="radio">
             <label for="c1e821" class="experience1">Haven't done</label>
@@ -4837,8 +4577,9 @@
             <input id="c1a826" name="c1a82" value="6" type="radio">
             <label for="c1a826" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Orgasm control / denial</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e82" class="experience radio_slider">
             <input id="c2e821" name="c2e82" value="1" type="radio">
             <label for="c2e821" class="experience1">Haven't done</label>
@@ -4863,14 +4604,10 @@
             <input id="c2a826" name="c2a82" value="6" type="radio">
             <label for="c2a826" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Edging
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e83" class="experience radio_slider">
             <input id="c1e831" name="c1e83" value="1" type="radio">
             <label for="c1e831" class="experience1">Haven't done</label>
@@ -4895,8 +4632,9 @@
             <input id="c1a836" name="c1a83" value="6" type="radio">
             <label for="c1a836" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Edging</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e83" class="experience radio_slider">
             <input id="c2e831" name="c2e83" value="1" type="radio">
             <label for="c2e831" class="experience1">Haven't done</label>
@@ -4921,14 +4659,10 @@
             <input id="c2a836" name="c2a83" value="6" type="radio">
             <label for="c2a836" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Frottage
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e84" class="experience radio_slider">
             <input id="c1e841" name="c1e84" value="1" type="radio">
             <label for="c1e841" class="experience1">Haven't done</label>
@@ -4953,8 +4687,9 @@
             <input id="c1a846" name="c1a84" value="6" type="radio">
             <label for="c1a846" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Frottage</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e84" class="experience radio_slider">
             <input id="c2e841" name="c2e84" value="1" type="radio">
             <label for="c2e841" class="experience1">Haven't done</label>
@@ -4979,14 +4714,10 @@
             <input id="c2a846" name="c2a84" value="6" type="radio">
             <label for="c2a846" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Phone sex / sexting / cyber
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e85" class="experience radio_slider">
             <input id="c1e851" name="c1e85" value="1" type="radio">
             <label for="c1e851" class="experience1">Haven't done</label>
@@ -5011,8 +4742,9 @@
             <input id="c1a856" name="c1a85" value="6" type="radio">
             <label for="c1a856" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Phone sex / sexting / cyber</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e85" class="experience radio_slider">
             <input id="c2e851" name="c2e85" value="1" type="radio">
             <label for="c2e851" class="experience1">Haven't done</label>
@@ -5037,18 +4769,11 @@
             <input id="c2a856" name="c2a85" value="6" type="radio">
             <label for="c2a856" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-    <tbody class="topic_group">
-      <tr class="topic">
-      <td colspan="2">Fetish</td>
-      </tr>
-      <tr class="activity">
-        <td colspan="2">
-          Leather
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="topic">Fetish</div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e86" class="experience radio_slider">
             <input id="c1e861" name="c1e86" value="1" type="radio">
             <label for="c1e861" class="experience1">Haven't done</label>
@@ -5073,8 +4798,9 @@
             <input id="c1a866" name="c1a86" value="6" type="radio">
             <label for="c1a866" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Leather</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e86" class="experience radio_slider">
             <input id="c2e861" name="c2e86" value="1" type="radio">
             <label for="c2e861" class="experience1">Haven't done</label>
@@ -5099,14 +4825,10 @@
             <input id="c2a866" name="c2a86" value="6" type="radio">
             <label for="c2a866" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Rubber / latex
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e87" class="experience radio_slider">
             <input id="c1e871" name="c1e87" value="1" type="radio">
             <label for="c1e871" class="experience1">Haven't done</label>
@@ -5131,8 +4853,9 @@
             <input id="c1a876" name="c1a87" value="6" type="radio">
             <label for="c1a876" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Rubber / latex</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e87" class="experience radio_slider">
             <input id="c2e871" name="c2e87" value="1" type="radio">
             <label for="c2e871" class="experience1">Haven't done</label>
@@ -5157,14 +4880,10 @@
             <input id="c2a876" name="c2a87" value="6" type="radio">
             <label for="c2a876" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Neoprene
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e88" class="experience radio_slider">
             <input id="c1e881" name="c1e88" value="1" type="radio">
             <label for="c1e881" class="experience1">Haven't done</label>
@@ -5189,8 +4908,9 @@
             <input id="c1a886" name="c1a88" value="6" type="radio">
             <label for="c1a886" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Neoprene</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e88" class="experience radio_slider">
             <input id="c2e881" name="c2e88" value="1" type="radio">
             <label for="c2e881" class="experience1">Haven't done</label>
@@ -5215,14 +4935,10 @@
             <input id="c2a886" name="c2a88" value="6" type="radio">
             <label for="c2a886" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Lycra
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e89" class="experience radio_slider">
             <input id="c1e891" name="c1e89" value="1" type="radio">
             <label for="c1e891" class="experience1">Haven't done</label>
@@ -5247,8 +4963,9 @@
             <input id="c1a896" name="c1a89" value="6" type="radio">
             <label for="c1a896" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Lycra</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e89" class="experience radio_slider">
             <input id="c2e891" name="c2e89" value="1" type="radio">
             <label for="c2e891" class="experience1">Haven't done</label>
@@ -5273,14 +4990,10 @@
             <input id="c2a896" name="c2a89" value="6" type="radio">
             <label for="c2a896" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Uniforms
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e90" class="experience radio_slider">
             <input id="c1e901" name="c1e90" value="1" type="radio">
             <label for="c1e901" class="experience1">Haven't done</label>
@@ -5305,8 +5018,9 @@
             <input id="c1a906" name="c1a90" value="6" type="radio">
             <label for="c1a906" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Uniforms</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e90" class="experience radio_slider">
             <input id="c2e901" name="c2e90" value="1" type="radio">
             <label for="c2e901" class="experience1">Haven't done</label>
@@ -5331,14 +5045,10 @@
             <input id="c2a906" name="c2a90" value="6" type="radio">
             <label for="c2a906" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Socks
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e91" class="experience radio_slider">
             <input id="c1e911" name="c1e91" value="1" type="radio">
             <label for="c1e911" class="experience1">Haven't done</label>
@@ -5363,8 +5073,9 @@
             <input id="c1a916" name="c1a91" value="6" type="radio">
             <label for="c1a916" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Socks</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e91" class="experience radio_slider">
             <input id="c2e911" name="c2e91" value="1" type="radio">
             <label for="c2e911" class="experience1">Haven't done</label>
@@ -5389,14 +5100,10 @@
             <input id="c2a916" name="c2a91" value="6" type="radio">
             <label for="c2a916" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Feet
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e92" class="experience radio_slider">
             <input id="c1e921" name="c1e92" value="1" type="radio">
             <label for="c1e921" class="experience1">Haven't done</label>
@@ -5421,8 +5128,9 @@
             <input id="c1a926" name="c1a92" value="6" type="radio">
             <label for="c1a926" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Feet</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e92" class="experience radio_slider">
             <input id="c2e921" name="c2e92" value="1" type="radio">
             <label for="c2e921" class="experience1">Haven't done</label>
@@ -5447,14 +5155,10 @@
             <input id="c2a926" name="c2a92" value="6" type="radio">
             <label for="c2a926" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
-      <tr class="activity">
-        <td colspan="2">
-          Furry
-        </td>      </tr>      <tr>
-        <td class="dom_cell">
+        </div>
+      </div>
+      <div class="activity alt">
+        <div class="cell dom_cell" data-role="Dom">
           <div id="c1e93" class="experience radio_slider">
             <input id="c1e931" name="c1e93" value="1" type="radio">
             <label for="c1e931" class="experience1">Haven't done</label>
@@ -5479,8 +5183,9 @@
             <input id="c1a936" name="c1a93" value="6" type="radio">
             <label for="c1a936" class="interest6">Favorite</label>
           </div>
-        </td>
-        <td class="sub_cell">
+        </div>
+        <div class="act_name">Furry</div>
+        <div class="cell sub_cell" data-role="Sub">
           <div id="c2e93" class="experience radio_slider">
             <input id="c2e931" name="c2e93" value="1" type="radio">
             <label for="c2e931" class="experience1">Haven't done</label>
@@ -5505,13 +5210,15 @@
             <input id="c2a936" name="c2a93" value="6" type="radio">
             <label for="c2a936" class="interest6">Favorite</label>
           </div>
-        </td>
-      </tr>
-    </tbody>
+        </div>
+      </div>
 
-  </table>
+    </div>
+  </div>
+
   <div id="url_area">
     <input type="text" id="url_text" readonly></input>
-    <button id="copy"><i class="iconoir-copy"></i><span class="tool_tip">Copy URL</span></button></div>
+    <button id="copy"><i class="iconoir-copy"></i><span class="tool_tip">Copy URL</span></button>
+  </div>
 </body>
 </html>

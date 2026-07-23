@@ -152,27 +152,20 @@ def fill_rows(name):
     elif name == 'full':
         rows = full_rows
     for topic in rows:
-        content += '    <tbody class="topic_group">\n'
-        content += '      <tr class="topic">\n'
-        content += f'      <td colspan="2">{topic[0]}</td>\n'
-        content += '      </tr>\n'
+        content += f'      <div class="topic">{topic[0]}</div>\n'
         for activity in topic[1]:
-            content += '      <tr class="activity">\n'
-            content += '        <td colspan="2">\n'
-            content += f'          {activity}\n'
-            content += '        </td>'
-            content += '      </tr>'
-            content += '      <tr>\n'
-            content += '        <td class="dom_cell">\n'
+            alt = ' alt' if counter % 2 else ''
+            content += f'      <div class="activity{alt}">\n'
+            content += '        <div class="cell dom_cell" data-role="Dom">\n'
             content += experience_div(f'c1e{counter}')
             content += interest_div(f'c1a{counter}')
-            content += '        </td>\n'
-            content += '        <td class="sub_cell">\n'
+            content += '        </div>\n'
+            content += f'        <div class="act_name">{activity}</div>\n'
+            content += '        <div class="cell sub_cell" data-role="Sub">\n'
             content += experience_div(f'c2e{counter}')
-            content += interest_div(f'c2a{counter}')    
-            content += '        </td>\n'
-            content += '      </tr>\n'
-            content += '    </tbody>\n'
+            content += interest_div(f'c2a{counter}')
+            content += '        </div>\n'
+            content += '      </div>\n'
             counter += 1
     return content, counter
 

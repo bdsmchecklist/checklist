@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BDSM Checklist</title>
 <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
@@ -15,27 +16,33 @@
 <body>
   <h1 id="title">BDSM Checklist</h1>
 
-  <table id="checklist_table">
-    <thead id="checklist_head">
-      <tr>
-	<th>
-	  <span class="header_name">Dom</span>
-	  <span id="dom_edit_buttons">
-	    <button id="clear_dom"><i class="iconoir-trash"></i><span class="tool_tip">Clear answers</span></button>
-	    <button id="edit_dom"><i class="iconoir-edit-pencil"></i><span class="tool_tip">Edit</span></button>
-	</span></th>
-	<th>
-	  <span class="header_name">Sub</span>
-	  <span id="sub_edit_buttons">
-	    <button id="clear_sub"><i class="iconoir-trash"></i><span class="tool_tip">Clear answers</span></button>
-	    <button id="edit_sub"><i class="iconoir-edit-pencil"></i><span class="tool_tip">Edit</span></button>
-	</span></th>
-      </tr>
-    </thead>
+  <div id="checklist">
+    <div id="checklist_head">
+      <div class="head_col">
+        <span class="header_name">Dom</span>
+        <span id="dom_edit_buttons">
+          <button id="clear_dom"><i class="iconoir-trash"></i><span class="tool_tip">Clear answers</span></button>
+          <button id="edit_dom"><i class="iconoir-edit-pencil"></i><span class="tool_tip">Edit</span></button>
+        </span>
+      </div>
+      <div class="head_spacer"></div>
+      <div class="head_col">
+        <span class="header_name">Sub</span>
+        <span id="sub_edit_buttons">
+          <button id="clear_sub"><i class="iconoir-trash"></i><span class="tool_tip">Clear answers</span></button>
+          <button id="edit_sub"><i class="iconoir-edit-pencil"></i><span class="tool_tip">Edit</span></button>
+        </span>
+      </div>
+    </div>
+
+    <div id="checklist_body">
 {{ checklist rows }}
-  </table>
+    </div>
+  </div>
+
   <div id="url_area">
     <input type="text" id="url_text" readonly></input>
-    <button id="copy"><i class="iconoir-copy"></i><span class="tool_tip">Copy URL</span></button></div>
+    <button id="copy"><i class="iconoir-copy"></i><span class="tool_tip">Copy URL</span></button>
+  </div>
 </body>
 </html>
