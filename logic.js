@@ -136,6 +136,22 @@ $(document).ready(function(){
     });
 });
 
+// Clicking the already-selected pill removes the answer, so an activity that
+// doesn't apply can be left blank. Radios don't deselect on their own, so we
+// intercept the label click (labels are what's clickable; inputs are hidden).
+$(document).ready(function(){
+    $('.radio_slider label').click(function(e) {
+	var input = document.getElementById($(this).attr('for'));
+	if (!input || input.disabled) return;
+	if (input.checked) {
+	    // Would stay checked; clear it instead. getURL runs as the click
+	    // bubbles to the .radio_slider handler above.
+	    e.preventDefault();
+	    input.checked = false;
+	}
+    });
+});
+
 // When the copy button is clicked, add the URL to the clipboard
 $(document).ready(function(){
     $('#copy').click(function() {

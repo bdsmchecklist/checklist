@@ -209,10 +209,15 @@ body {
     transition:background .12s, color .12s;
 }
 
-.radio_slider label:hover {
+/* Hover only on unselected pills when a selection is possible; hovering the
+   already-selected pill must keep its fill, not preview a deselect. */
+.radio_slider input:not(:disabled):not(:checked) + label:hover {
     color:var(--c-ink);
     background:rgba(0,0,0,.09);
 }
+
+/* Locked pills are not interactive */
+.radio_slider input:disabled + label { cursor:default; }
 
 /* Selected pill: fill with its ramp colour */
 .radio_slider input:checked + label {
@@ -282,7 +287,7 @@ body {
         white-space:nowrap;
         transition:opacity .14s, transform .14s;
     }
-    .radio_slider label:hover { opacity:0.6; background:var(--c); }
+    .radio_slider input:not(:disabled):not(:checked) + label:hover { opacity:0.6; background:var(--c); }
 
     /* The selected dot lights up and expands to name itself */
     .radio_slider input:checked + label {
