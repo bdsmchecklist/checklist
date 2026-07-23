@@ -1,8 +1,8 @@
-// Parse the URL parameter
+// Parse the parameter from the URL fragment (never sent to the server, unlike query params)
 function getParameterByName(name, url) {
-    if (!url) url = window.location.href;
+    if (!url) url = window.location.hash;
     name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+    var regex = new RegExp("[#&]" + name + "(=([^&]*)|&|$)");
     results = regex.exec(url);
     if (!results) return null;
     if (!results[2]) return '';
@@ -118,13 +118,13 @@ function getURL() {
     sub_checkdigit = sum_sub % 36;
     dom += dom_checkdigit.toString(36);
     sub += sub_checkdigit.toString(36);
-    var url = window.location.href.split("?")[0];
+    var url = window.location.href.split("#")[0].split("?")[0];
     if (parseInt(dom, 36) > 0 & parseInt(sub, 36) > 0)
-	document.getElementById("url_text").value = url + "?dom=" + dom + "&sub=" + sub;
+	document.getElementById("url_text").value = url + "#dom=" + dom + "&sub=" + sub;
     else if (parseInt(dom, 36) > 0)
-	document.getElementById("url_text").value = url + "?dom=" + dom;
+	document.getElementById("url_text").value = url + "#dom=" + dom;
     else if (parseInt(sub, 36) > 0)
-	document.getElementById("url_text").value = url + "?sub=" + sub;
+	document.getElementById("url_text").value = url + "#sub=" + sub;
     else
 	document.getElementById("url_text").value = "";
 }
